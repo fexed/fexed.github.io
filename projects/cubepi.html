@@ -42,9 +42,106 @@
     <!-- main body -->
     <div class="container mt-5 pl-5">
       <div class="row mb-5">
-        <div class"col-sm-6 mr-3">
-          <h4>CubePi</h4>
+        <div class"card py-3">
+            <div class="card-body">
+              <h4>CubePi</h4>
+              <h6 class="card-subtitle mb-2 text-muted">A media center, made with a Raspberry Pi 3 B+ and an old Nintendo Gamecube</h6>
+            </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class"card py-3" style="width: 20rem;">
+          <div class="card-body">
+            <h4>Goal</h4>
+            <img class="card-img-top" style="width: 14rem;" src="img/photos/cubepi/end.jpg" alt="result">
+            <p><b>Build a transportable retrogaming console/media center</b>.<br>
+            I want to preserve as much as possible the exterior of the Gamecube:
+            no custom-made 3D printed panels and no external modification.<br>
+            In addition, I want to reuse as many original parts as possibile:
+            power supply unit and buttons aboce all else.</p>
+          </div>
+        </div>
+        <div class"card py-3" style="width: 20rem;">
+          <div class="card-body">
+            <h4>What?</h4>
+            <img class="card-img-top" style="width: 14rem;" src="img/photos/cubepi/scheme.jpg" alt="scheme">
+            <p>In short: I took a Raspberry Pi, put it inside a Gamecube,
+            installed RetroPie and started playing <i>old games</i>.<br>
+            And watched YouTube between gaming sessions.</p>
+          </div>
+        </div>
+        <div class"card py-3" style="width: 20rem;">
+          <div class="card-body">
+            <h4>Why?</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Why not?</h6>
+            <p>I wanted a thing like this in my room since a long time: a highly
+            transportable retrogaming console.<br>
+            The Gamecube is a beautiful console and its interior is very
+            spacious.<br>In addition, it's been unused since decades.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class"card py-3">
+          <div class="card-body">
+            <h4>Requirements</h4>
+            <h6 class="card-subtitle mb-2 text-muted">I linked the products I've bought and used in this specific build</h6>
+              <ul class="list-group">
+                <a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/" class="list-group-item list-group-item-action"><b>Raspberry Pi 3 B+</b></a>
+                <a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.XNintendo+Gamecube.TRS0&_nkw=Nintendo+Gamecube&_sacat=0" class="list-group-item list-group-item-action"><b>Nintendo Gamecube</b></a>
+                <a href="https://www.amazon.it/gp/product/B06XSZ1293/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1" class="list-group-item list-group-item-action">HDMI extender</a>
+                <a href="https://www.amazon.it/gp/product/B000E5CYW8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1" class="list-group-item list-group-item-action">USB extender</a>
+                <a href="https://www.amazon.it/gp/product/B01L3BQVUM/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1" class="list-group-item list-group-item-action">USB/Wireles keyboard</a>
+                <a href="https://www.amazon.it/gp/product/B00PL271Y0/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1" class="list-group-item list-group-item-action">USB gamepad</a>
+                <a href="https://www.amazon.com/ATLIN-Screwdriver-Security-Nintendo-Cartridges/dp/B01N3UO3V7" class="list-group-item list-group-item-action"><b>Gamebit Screwdriver</b></a>
+                <span class="list-group-item">Cables, leds and buttons</span>
+                <span class="list-group-item">Solder</span>
+                <span class="list-group-item">Hot glue</span>
+                <span class="list-group-item">...patience</span>
+              </ul>
+          </div>
+        </div>
+        <div class"card py-3">
+          <div class="card-body">
+            <img class="card-img-top" src="img/photos/cubepi/inside.jpg" alt="inside">
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class"card py-3">
+          <div class="card-body">
+            <h4>First step: disassembling the cube</h4>
+            <img class="px-1 rounded mx-auto float-md-left" style="width: 14rem;" src="img/photos/cubepi/1.jpg" alt="inside">
+            <p>
+            Even though the Nintendo Gamecube is a console born during a time
+            where "<b>easily disassembled = easily hacked</b>", I was surprised
+            by how easy it is to tear apart this console (given that you have
+            the right screwdriver!) and by how neatly organized the interior was:
+            the motherboard was inside a dissipating metal cage and the big
+            fan on the side helped mantain the interior very cool.<br>
+            The mini-CD drive is a easy to remove block (thanks to a
+            <a href="https://www.ifixit.com/Teardown/Nintendo+GameCube+Teardown/1727">iFixit guide</a>)After I finished tearing apart the cube, I decided to keep the
+            power supply unit and the fan for two main reasons: <b>the fan does a
+            really good job at keeping a low temperature</b> (and letting me play heavy
+            retrogames without worrying about the Pi) and <b>thanks to a
+            <a href="https://www.instructables.com/id/Retropie-Gamecube-Case-Project/"> very precise Instructable</a>
+            I found the correct pinout of the power supply</b>, so I managed to
+            make a quick mini USB - Gamecube cable and saved yet another AC
+            adapter.</p>
+            <p>
+            To make the power cable, I unsoldered from the motherboard the connector that linked to the Gamecube power supply.<br><br>
 
+            <img class="px-1 rounded mx-auto float-md-left" style="width: 14rem;" src="img/photos/cubepi/2.jpg" alt="inside">
+            <i>Failing miserably</i>. So I removed all the pins, unsoldering one by one, and reinserting one by one by hand in the
+            plastic connector. <i>At least it works</i>.<br>
+            I then soldered a mini USB cable to the right pins (+5V and bround, respectively pin 22 and 1).<br>
+            <b>Attention</b>: make sure to use a short and thick wire. The first time I used a very long cable and the Pi
+            continuosly went undervolt (yellow spark in the top-right corner). I remade the cable with only 4-5cm of length
+            and never saw that spark again.<br>
+            <i>Huge thanks to Simone Tolomei for the tips.</i>
+            </p>
+
+          </div>
         </div>
       </div>
     </div>
