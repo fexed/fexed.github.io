@@ -111,7 +111,11 @@
         <div class"card py-3">
           <div class="card-body">
             <h4>First step: disassembling the cube</h4>
-            <img class="px-1 rounded mx-auto float-md-left" style="width: 14rem;" src="img/photos/cubepi/1.jpg" alt="inside">
+            <div class="px-1 mx-auto float-md-left">
+              <img class="px-1 py-1 rounded mx-auto float-md-left" style="width: 14rem;" src="img/photos/cubepi/1.jpg" alt="inside"><br>
+              <img class="px-1 py-1 rounded mx-auto float-md-left" style="width: 14rem;" src="img/photos/cubepi/2.jpg" alt="cable">
+            </div>
+
             <p>
             Even though the Nintendo Gamecube is a console born during a time
             where "<b>easily disassembled = easily hacked</b>", I was surprised
@@ -119,28 +123,98 @@
             the right screwdriver!) and by how neatly organized the interior was:
             the motherboard was inside a dissipating metal cage and the big
             fan on the side helped mantain the interior very cool.<br>
-            The mini-CD drive is a easy to remove block (thanks to a
-            <a href="https://www.ifixit.com/Teardown/Nintendo+GameCube+Teardown/1727">iFixit guide</a>)After I finished tearing apart the cube, I decided to keep the
+            The mini-CD drive is a easy to remove block (thanks to an
+            <a href="https://www.ifixit.com/Teardown/Nintendo+GameCube+Teardown/1727">iFixit guide</a>)<br> After I finished tearing apart the cube, I decided to keep the
             power supply unit and the fan for two main reasons: <b>the fan does a
             really good job at keeping a low temperature</b> (and letting me play heavy
             retrogames without worrying about the Pi) and <b>thanks to a
             <a href="https://www.instructables.com/id/Retropie-Gamecube-Case-Project/"> very precise Instructable</a>
             I found the correct pinout of the power supply</b>, so I managed to
             make a quick mini USB - Gamecube cable and saved yet another AC
-            adapter.</p>
-            <p>
-            To make the power cable, I unsoldered from the motherboard the connector that linked to the Gamecube power supply.<br><br>
-
-            <img class="px-1 rounded mx-auto float-md-left" style="width: 14rem;" src="img/photos/cubepi/2.jpg" alt="inside">
-            <i>Failing miserably</i>. So I removed all the pins, unsoldering one by one, and reinserting one by one by hand in the
-            plastic connector. <i>At least it works</i>.<br>
+            adapter. To make the power cable, I unsoldered from the motherboard the connector that linked to the Gamecube power supply.</p>
+            <br><br>
+            <p><i>Failing miserably</i>. So I removed all the pins, unsoldering them one by one, and I reinserted them one by one by hand in the
+            plastic connector. Terrible, but <i>at least it works</i>.<br>
             I then soldered a mini USB cable to the right pins (+5V and bround, respectively pin 22 and 1).<br>
             <b>Attention</b>: make sure to use a short and thick wire. The first time I used a very long cable and the Pi
             continuosly went undervolt (yellow spark in the top-right corner). I remade the cable with only 4-5cm of length
             and never saw that spark again.<br>
             <i>Huge thanks to Simone Tolomei for the tips.</i>
             </p>
+          </div>
+        </div>
+        <div class"card py-3">
+          <div class="card-body">
+            <h4>Second step: inserting the Raspberry Pi... and the cables</h4>
+            <img class="px-1 rounded mx-auto float-md-right" style="width: 14rem;" src="img/photos/cubepi/4.jpg" alt="inside">
+            <p>As said by <a href="https://www.youtube.com/user/thebenheckshow">The Ben Heck Show</a> many many times:
+            <b>do not underestimate how much space is taken by the cables</b> especially considering extenders and the
+            like. As much as I'd like to say "<i>I calculated every centimeter</i>", I only had an huge amount of luck:
+            the extenders I bought, and in particulare the HDMI extender, barely fit inside and at the same time
+            they lock the Raspberry Pi in place. So, without a single screw and by only cutting a few plastic pieces
+            inside the Gamecube, <b>the Raspberry Pi and the cables are locked in place</b>.</p>
+            <p>At this point, the project could be considered finished: the Gamecube is untouched, the Raspberry Pi
+            fits perfectly. So let's boot up RetroPie and play something!<br>But, by searching a bit on the
+            internet, I found a couple of very cool ideas that I wanted to try out: a <b>power on led</b> and
+            a <b>reboot/reset button</b>.<br>This will require the use of the <b>GPIO pins</b>, <i>something I've never done
+            and that's why I decided to do it</i>.</p>
+          </div>
+        </div>
+      </div>
 
+      <div class="row mb-5">
+        <div class"card py-3">
+          <div class="card-body">
+            <h4>First optional step: the power on led</h4>
+
+            <div class="px-1 mx-auto float-md-left">
+              <img class="px-1 py-1 rounded mx-auto float-md-left" style="width: 14rem;" src="img/photos/cubepi/5.jpg" alt="led powered on"><br>
+              <img class="px-1 py-1 rounded mx-auto float-md-left" style="width: 14rem;" src="img/photos/cubepi/6.jpg" alt="led hot glue">
+            </div>
+            <p>By using one of the two <a href="https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter">UART</a> GPIO pins,
+            particurarly the <a href="https://pinout.xyz/pinout/pin8_gpio14">pin 8</a>, and by putting <code>enable_uart=1</code> in <code>/boot/config.txt</code>,
+            I attached a led that <b>automatically lights up when the Raspberry Pi is powered on</b> and <b>shuts of when the Raspberry Pi is completely shutted down</b>.<br>
+            So, I can press the Gamecube's power button to power up everything, but I <i>should</i> do a <code>sudo poweroff</code> (from the terminal, from the Kodi menu,
+            from the Emulation Station menu...) and <b>wait for the led to shut down</b> before pressing the power button to shut of the current. <br><br>
+            I want to automatize this in the future.</p>
+            <p>I linked the led to the GPIO 8 and 6, for respectively the + and - of the led, and I locked the led to the top of the Gamecube with <i>a lot</i> of
+            hot glue. Maybe I used too much glue but the important part is that the led should stay in place: many times I removed the top shell and some
+            cables detached, but the led stayed in place.</p>
+          </div>
+        </div>
+        <div class"card py-3">
+          <div class="card-body">
+            <h4>Second optional step: the reboot button</h4>
+            <img class="px-1 rounded mx-auto float-md-left" style="width: 14rem;" src="img/photos/cubepi/8.jpg" alt="button">
+            <p>I recycled the original reset button, which was soldered on the front circuit board (which contains the joypad ports). The reasons are simple: <br>
+            <b>it's a sping-loaded button</b>, so it keeps high in place the plastic button on the shell, and being the original button <b>I can easily put it
+            in the original position.</b></p>
+            <p>Thanks to a few online guides, I decide to proceed like this: I linked the button to the +3.3v (<a href="https://pinout.xyz/pinout/pin1_3v3_power">pin 1</a>)
+            and to the <a href="https://pinout.xyz/pinout/pin11_gpio17">pin 11</a>, and I wrote a simple Python script that, once per second, checks if the button is pressed in which case
+            execs a <code>sudo reboot</code>. The script is launched when the system boots up (thanks to <code>/etc/rc.local</code> or a <code>cron @reboot</code>).<br>Here's the code: </p>
+            <pre class="pre-scrollable">
+              <code>
+                import RPi.GPIO as GPIO
+                import time
+                import subprocess
+
+                GPIO.setmode(GPIO.BCM)
+                GPIO.setup(17, GPIO.IN,pull_up_down=GPIO.PUD_DOWN)
+
+                bashCommand = "sudo reboot"
+
+                try:
+                    while True:
+                         button_state = GPIO.input(17)
+                         if button_state == True:
+                             print "Exec"
+                             process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
+                             output, error = process.communicate()
+                             time.sleep(1)
+                except:
+                    print "Exit"
+              </code>
+            </pre>
           </div>
         </div>
       </div>
