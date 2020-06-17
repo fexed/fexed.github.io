@@ -2,7 +2,7 @@ Espresso::Strong black coffee made by forcing steam through ground coffee beans:
 Cappuccino::Coffee made with milk that has been frothed up with pressurized steam::150::true::Caffeine::0
 Ristretto::A drink of very strong, concentrated espresso::15::true::Caffeine::0
 Tea::Aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves::200::true::Theine::0
-Starbucks Short:: ::245::true::Caffeine::0
+Starbucks Short::Smol cup::245::true::Caffeine::0
 Starbucks Tall:: ::350::true::Caffeine::0
 Starbucks Grande:: ::470::true::Caffeine::0
 Starbucks Venti:: ::590::true::Caffeine::0
@@ -13,3 +13,4 @@ Dunkin Donuts Small:: ::295::true::Caffeine::0
 Dunkin Donuts Medium:: ::470::true::Caffeine::0
 Dunkin Donuts Large:: ::590::true::Caffeine::0
 Dunkin Donuts Extra Large:: ::710::true::Caffeine::0
+Big cup::Pure caffeine::99::false::Caffeine::0
