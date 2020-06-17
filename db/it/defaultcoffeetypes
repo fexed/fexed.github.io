@@ -1,0 +1,16 @@
+20200617
+Espresso::Tazzina di caffè da bar o da moka::30::true::Caffeina::0
+Cappuccino::Tazza di cappuccino da bar::150::true::Caffeina::0
+Caffè ristretto::Tazzina di caffè ristretto::15::true::Caffeina::0
+Tè::Bevanda aromatica comunemente preparata versando acqua calda o bollente su foglie essiccate::200::true::Teina::0
+Starbucks Short:: ::245::true::Caffeina::0
+Starbucks Tall:: ::350::true::Caffeina::0
+Starbucks Grande:: ::470::true::Caffeina::0
+Starbucks Venti:: ::590::true::Caffeina::0
+McDonald's Small:: ::350::true::Caffeina::0
+McDonald's Medium:: ::470::true::Caffeina::0
+McDonald's Large:: ::650::true::Caffeina::0
+Dunkin Donuts Small:: ::295::true::Caffeina::0
+Dunkin Donuts Medium:: ::470::true::Caffeina::0
+Dunkin Donuts Large:: ::590::true::Caffeina::0
+Dunkin Donuts Extra Large:: ::710::true::Caffeina::0
