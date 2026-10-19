@@ -8,6 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
 
     <!-- Favicons -->
     <link rel="icon" href="img/icon32.png" sizes="32x32" type="image/png">
@@ -16,9 +17,9 @@
     <!-- Theme -->
     <meta name="theme-color" content="#004680">
 
-    <title>fexed | Projects</title>
+    <title>fexed | Code &amp; Projects</title>
   </head>
-  <body class="d-flex flex-column">
+  <body class="legacy-page d-flex flex-column">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- navbar -->
@@ -33,13 +34,16 @@
             <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Projects</a>
+            <a class="nav-link" href="blog.html">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.flickr.com/people/157105673@N08">Photos</a>
+            <a class="nav-link active" href="#">Code</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://fexed.notion.site/d1f97c2f4f094c33954f26e4bd0d8f04?v=1ec2c14ee40d4f4e8c61f5031d108387&pvs=4">Notes</a>
+            <a class="nav-link" href="photos.html">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="others.html">Others</a>
           </li>
         </ul>
       </nav>
@@ -47,476 +51,73 @@
     <div class="mt-5"></div>
 
     <!-- main body -->
-    <div class="container mt-5 px-5">
-      <h4>Projects</h4>
-      <h6 class="card-subtitle mb-2 text-muted">Here are the projects I've worked on. Updates, as well as the time spent on each project, won't be regular.</h6>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
+    <main class="container mt-5 px-5 code-page">
+      <section class="code-intro">
+        <p class="section-eyebrow">03 / WORKSHOP</p>
+        <h1>Code &amp; projects</h1>
+        <p class="code-lede">A collection of software, experiments, and things made to see what might be possible.</p>
+      </section>
 
-        <!-- TEMPLATE
-          <div class="card mt-3 mx-auto">
-            <div class="card-body">
-              <h4 class="card-title">YEAR</h4>
-              <div class="list-group">
-                
-              </div>
-            </div>
-          </div>
-        -->
-        <!-- 2024 -->
-          <div class="card mt-3 mx-auto">
-            <div class="card-body">
-              <h4 class="card-title">2024</h4>
-              <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action">
-                  <div>
-                    <h5>Inconscio</h5>
-                  </div>
-                  <p class="mb-1">Companion app for a tabletop RPG that's being design by a friend of mine. This can be considered my first freelance paid work, and it's yet another fully multiplatform app. I'll work on some customly designed layouts too, so a lot of Canvases to be tested on both platforms.<br>
-                  </p>
-                  <small>Android, iOS<br><img src="img/android.png" class="float-end" style="width: 2rem;" alt="android logo"> <img src="img/ios.png" class="float-end" style="width: 2rem;" alt="ios logo"></small>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Where?</h5>
-                  </div>
-                  <p class="mb-1">A geoguessr-like game where you are presented with a small patch of the Earth and you have to guess where are you, by stating the city or the nation, and receving points. Very small app built in few hours during a workshop with high-school students in Garmin. Currently not published.<br>
-                  </p>
-                  <small>Android, finished<br><img src="img/android.png" class="float-end" style="width: 2rem;" alt="android logo"></small>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">
-                  <div>
-                    <h5>Home Notes</h5>
-                  </div>
-                  <p class="mb-1">Another fully multiplatform mobile app, this time with a small self-hosted server. The goal is to self-host and share ideas and small notes that I take during the day. It's a yet another experiment built with KMM, Compose Multiplatform and few other libraries. Not public yet!<br>
-                  </p>
-                  <small>Personal project, Android, iOS, on hold<br><img src="img/android.png" class="float-end" style="width: 2rem;" alt="android logo"> <img src="img/ios.png" class="float-end" style="width: 2rem;" alt="ios logo"></small>
-                </a>
-                <a href="https://github.com/fexed/Inconsistencies-Detector" class="list-group-item list-group-item-action list-group-item-warning">
-                  <div>
-                    <h5>Inconsistencies Detector</h5>
-                  </div>
-                  <p class="mb-1">A project for the Human Language Technologies course, consisting of a small model that detects iconsistencies in natural language paragraphs.<br>
-                  </p>
-                  <small>University project, machine learning, on hold<br><img src="img/unipi.png" class="float-end" style="width: 2rem;" alt="android logo"></small>
-                </a>
-                <a href="https://github.com/fexed/eye4eye" class="list-group-item list-group-item-action">
-                  <div>
-                    <h5>Eye4Eye</h5>
-                  </div>
-                  <p class="mb-1">A small playground for the Prisoner's Dilemma. I plan on making a modular environment where to deploy a Reinforcement Learning actor and see what happens.<br>
-                  </p>
-                  <small>Personal project, game theory</small>
-                </a>
-              </div>
-            </div>
-          </div>
+      <section class="featured-projects" aria-labelledby="featured-title">
+        <div class="section-heading">
+          <p class="section-eyebrow">SELECTED WORK</p>
+          <h2 id="featured-title">Out in the field</h2>
+        </div>
+        <div class="featured-grid">
+          <article class="featured-card featured-pinball">
+            <p class="featured-meta">01 / ANDROID GAME</p>
+            <h3>Pinball on Android</h3>
+            <p>A lovingly rebuilt take on the classic Space Cadet 3D Pinball from the Windows era.</p>
+            <a class="featured-link" href="https://github.com/fexed/Pinball-on-Android">View on GitHub <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="featured-card featured-exoplanets">
+            <p class="featured-meta">02 / SPACE EXPLORATION</p>
+            <h3>Exoplanet Explorer</h3>
+            <p>A minimal browser for exploring exoplanet data from NASA's archives.</p>
+            <a class="featured-link" href="https://play.google.com/store/apps/details?id=com.fexed.exoplanetexplorer">Google Play <span aria-hidden="true">↗</span></a>
+            <a class="featured-link featured-secondary-link" href="https://github.com/fexed/ExoplanetExplorer">View source on GitHub <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="featured-card featured-ocrilia">
+            <p class="featured-meta">03 / WORLD BUILDING</p>
+            <h3>Ocrilia</h3>
+            <p>A science-fantasy universe that began as a homebrew tabletop campaign setting.</p>
+            <a class="featured-link" href="projects/ocrilia.html">Explore the world <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
 
-        <!-- 2023 -->
-          <div class="card mt-3 mx-auto">
-            <div class="card-body">
-              <h4 class="card-title">2023</h4>
-              <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">
-                  <div>
-                    <h5>L'Urlo della Colomba</h5>
-                  </div>
-                  <p class="mb-1">An RPG made with RPG Maker MZ. Coming soon (-ish, it's a spare time project so I don't know how often and how much I will work on this)<br>
-                  </p>
-                  <small>Personal project, game, on hold</small>
-                </a>
-                <a href="https://github.com/fexed/ndoTap" class="list-group-item list-group-item-action">
-                  <div>
-                    <h5>ndoTap</h5>
-                  </div>
-                  <p class="mb-1">My first web app, built with NuxtJS. Born as a UI validation tool, it presents the user with a screenshot and a simple task, asking the question "where would you tap?". By gathering these data as an heatmap, the developer can decide wether or not the GUI is well thought out.<br>
-                  </p>
-                  <small>Personal project, web app, on hold</small>
-                </a>
-                <a href="https://github.com/fexed/nuzlockone" class="list-group-item list-group-item-action">
-                  <div>
-                    <h5>NuzlockOne</h5>
-                  </div>
-                  <img src="img/projects/icons/nuzlockone.png" class="float-end"  style="width: 4rem; margin: 8px;" alt="app icon">
-                  <p class="mb-1">A fully multiplatform App built with Kotlin Multiplatform, Compose Multiplatform, Ktor and more.<br>A companion for those brave gamers that undertake the final Pokémon challenge: a Nuzlocke!<br>There are few elements I am not satisfied with, that I want to work on before releasing it.<br>
-                  </p>
-                  <small>Personal project, Android, iOS, on hold<br><img src="img/android.png" class="float-end" style="width: 2rem;" alt="android logo"> <img src="img/ios.png" class="float-end" style="width: 2rem;" alt="ios logo"></small>
-                </a>
-                <a href="https://www.instagram.com/p/CvfYhxjoGcZ/" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Cosplay Means Be Whatever You Want</h5>
-                  </div>
-                  <p class="mb-1">A tribute to My Dress-Up Darling and the cosplay world as a whole, realised together with Ciocoreto: a 10 hours long shooting session in studio to make a collage of all Marin Kitagawa's cosplays in a single image!<br>
-                  </p>
-                  <small>Personal project, photography, cosplay, finished</small>
-                </a>
-                <a href="https://fexed.gumroad.com/l/statues-pt1" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Statues, part one</h5>
-                  </div>
-                  <p class="mb-1">My very first "big" photography project. Inspired by classical sculptures, the idea is to capture those atmospheres and vibes into photography, with delicate poses of anonymous subjects lightly covered by white cloth.<br>
-                  </p>
-                  <small>Personal project, photography, NSFW, finished</small>
-                </a>
-                <a href="https://github.com/fexed/Notes/tree/master/UniPi_CSMaster_AI/ParallelandDistributedSystems/code/huffman" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Parallel Huffman</h5>
-                  </div>
-                  <p class="mb-1">A project for the Parallel Systems course, where I implemented a parallel version of the Huffman Coding algorithm.<br>
-                  </p>
-                  <small>University project, parallel programming, finished<br><img src="img/unipi.png" class="float-end" style="width: 2rem;" alt="android logo"></small>
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.fexed.wearcountdown" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Wear Countdown</h5>
-                  </div>
-                  <img src="img/projects/icons/wearcountdown.png" class="float-end"  style="width: 4rem; margin: 8px;" alt="app icon">
-                  <p class="mb-1">A proof-of-concept of a countdown app for Wear OS, built using Jetpack Compose and its navigation system, along with the Horologist library. It provides support to Tiles and Complications!<br>
-                  </p>
-                  <small>Personal project, Android, finished<br><img src="img/android.png" class="float-end" style="width: 2rem;" alt="android logo"></small>
-                </a>
-                
-                <a href="https://github.com/fexed/Notes/blob/master/UniPi_CSMaster_AI/IntelligentSystemsforPatternRecognition/artisticcreativity/artisticcreativity.pdf" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Artificial Creativity</h5>
-                  </div>
-                  <p class="mb-1">As a project for the ISPR course, I've written a small review of current common prompt-based and prompt-free image, text and music generation systems. While writing this review I learned a lot about the inner workings of Stable Diffusion, DALL-E and StyleGAN, all three being really fascinating.<br>
-                  </p>
-                  <small>University project, publication, review, machine learning, finished<br><img src="img/unipi.png" class="float-end" style="width: 2rem;" alt="android logo"></small>
-                </a>
-                <span class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Be My Boulder</h5>
-                  </div>
-                  <img src="img/projects/icons/bemyboulder.png" class="float-end"  style="width: 4rem; margin: 8px;" alt="app icon">
-                  <p class="mb-1">Made in collaboration with Giuseppe Gatto and Duccio Breschi, it's a cloud-based ranking systems for bouldering routes, used to keep track of the routes and of the users' scores. It includes a web app for the users, backend and a mobile app for the admins to add and manage the routes and the routes' photos. I've worked on the mobile apps, which are currently not publicly available.<br>
-                  </p>
-                  <small>Team project, Android, iOS<br><img src="img/android.png" class="float-end" style="width: 2rem;" alt="android logo"> <img src="img/ios.png" class="float-end" style="width: 2rem;" alt="ios logo"></small>
-                </span>
-              </div>
-            </div>
+      <section class="archive-section" id="project-archive" aria-labelledby="archive-title">
+        <div class="section-heading archive-heading">
+          <div>
+            <p class="section-eyebrow">THE ARCHIVE</p>
+            <h2 id="archive-title">Projects by year</h2>
           </div>
-
-        <!-- 2022 -->
-          <div class="card mt-3 mx-auto">
-            <div class="card-body">
-              <h4 class="card-title">2022</h4>
-              <div class="list-group">
-                <a href="https://github.com/fexed/Notes/blob/master/UniPi_CSMaster_AI/IntroductiontoQuantumComputing/hhlalgorithm.pdf" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>The HHL Algorithm</h5>
-                  </div>
-                  <p class="mb-1">A few-pages long report on the HHL algorithm, a quantum approach to solving linear systems of equations and a very interesting dive into the perks of quantum computing.</p>
-                  <small>University project, publication, review, quantum computing, finished<br><img src="img/unipi.png" class="float-end" style="width: 2rem;" alt="android logo"></small>
-                </a>
-                <span class="list-group-item list-group-item-success">
-                  <div>
-                    <h5>Caput Draconis - Duels</h5>
-                  </div>
-                  <img src="img/projects/icons/caputdraconisduels.png" class="float-end"  style="width: 4rem; margin: 8px;" alt="app icon">
-                  <p class="mb-1">Remake of my very first Android app, this time built with Kotlin Multiplaform, SwiftUI and Jetpack Compose for both Android and iOS. Fun experiment where I learned a lot, and my very first iOS app!<br>
-                  <a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.fexed.caputdraconis.android">Play Store</a>
-                  <a class="btn btn-secondary" href="https://apps.apple.com/us/app/caput-draconis-duels/id6444910149">App Store</a>
-                  <a class="btn btn-secondary" href="https://github.com/fexed/CaputDraconis-multiplatform">GitHub Repo</a>
-                  </p>
-                  <small>Personal project, Android, iOS, finished<br><img src="img/android.png" class="float-end" style="width: 2rem;" alt="android logo"> <img src="img/ios.png" class="float-end" style="width: 2rem;" alt="ios logo"></small>
-                </span>
-                <a href="https://play.google.com/store/apps/details?id=com.fexed.exoplanetexplorer" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Exoplanet Explorer</h5>
-                  </div>
-                  <img src="img/projects/icons/exoplanetexplorer.png" class="float-end"  style="width: 4rem; margin: 8px;" alt="app icon">
-                  <p class="mb-1">Very small app built in a few hours: a minimal browser of some data about exoplanets, taken from NASA's archives. A one-night project built to experiment for the first time with Jetpack Compose and hoisting.</p>
-                  <small>Personal project, Android, finished<br><img src="img/android.png" class="float-end" style="width: 2rem;" alt="android logo"></small>
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.fexed.firetap" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Radar Hunt</h5>
-                  </div>
-                  <img src="img/projects/icons/radarhunt.png" class="float-end"  style="width: 4rem; margin: 8px;" alt="app icon">
-                  <p class="mb-1">A mobile game based on touch perception: no eyes required.<br>A sonar-like vibration tells you where the target is,
-                  and the goal is to find it.</p>
-                  <small>Personal project, Android, finished<br><img src="img/android.png" class="float-end" style="width: 2rem;" alt="android logo"></small>
-                </a>
-                <a href="https://arxiv.org/abs/2207.00010" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Continual Learning for Human State Monitoring</h5>
-                  </div>
-                  <p class="mb-1">Empirical evaluation assessing the ability of popular Continual Learning strategies in mitigating forgetting on Human State Monitoring data. Accepted to a presentation at the ESANN 2022 conference.</p>
-                  <small>Publication, machine learning, finished</small>
-                </a>
-                <a href="https://github.com/fexed/Pinball-on-Android" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Pinball on Android</h5>
-                  </div>
-                  <img src="img/projects/icons/pinballonandroid.png" class="float-end"  style="width: 4rem; margin: 8px;" alt="app icon">
-                  <p class="mb-1">A porting of the fantastic Space Cadet 3D Pinball game from '90s Windows era. Built from the source decompiled by k4zmu2a and an initial Android port from iscle.</p>
-                  <small>Personal project, Android, finished<br><img src="img/android.png" class="float-end" style="width: 2rem;" alt="android logo"></small>
-                </a>
-                <a href="https://youtu.be/HpJ4knuUn-I" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Ferris Sweep</h5>
-                  </div>
-                  <p class="mb-1">I built my first splitted keyboard. Very fun project, very cool keyboard and will probably make more.</p>
-                  <small>Personal project, tinkering, finished</small>
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.fexed.charactersheet" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>The Character Vault</h5>
-                  </div>
-                  <img src="img/projects/icons/charactervault.png" class="float-end"  style="width: 4rem; margin: 8px;" alt="app icon">
-                  <p class="mb-1">Born as a hands-on experience to self-teach Kotlin and the MVVM design pattern and slowly evolved into a fully-fledged app, thanks to the feedbacks of the users on my Telegram channel.</p>
-                  <small>Personal project, Android, finished<br><img src="img/android.png" class="float-end" style="width: 2rem;" alt="android logo"></small>
-                </a>
-                <a href="https://github.com/fexed/CM-ML-project" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Neural Networks from Scratch</span></h5>
-                  </div>
-                  <p class="mb-1">A neural network with regularization, momentum and other features. Made from scratch as a Master's Degree project, in collaboration with Sergio Latrofa and Riccardo Parente.</p>
-                  <small>University project, machine learning, finished<br><img src="img/unipi.png" class="float-end" style="width: 2rem;" alt="unipi logo"></small>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        <!-- 2021 -->
-          <div class="card mt-3 mx-auto">
-            <div class="card-body">
-              <h4 class="card-title">2021</h4>
-              <div class="list-group">
-                <a href="https://github.com/fexed/gradthesis/blob/main/thesis_it.pdf" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Graduation Thesis <span class="badge bg-secondary">IT</span></h5>
-                  </div>
-                  <p class="mb-1">A comparison between continual learning approaches on human state monitoring data.</p>
-                  <small>University project, machine learning, continual learning, finished<br><img src="img/unipi.png" class="float-end" style="width: 2rem;" alt="unipi logo"></small>
-                </a>
-                <a href="https://github.com/fexed/APIForecast" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>APIForecast</h5>
-                  </div>
-                  <p class="mb-1">The purpose of this project is to demonstrate the application of three main forecasting functions: single exponential smoothing, double exponential smoothing and Holt-Winters forecasting.<br>Made in collaboration with Simone Pepi.</p>
-                  <small>University project, forecasting, finished<br><img src="img/unipi.png" class="float-end" style="width: 2rem;" alt="unipi logo"></small>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        <!-- 2020 -->
-          <div class="card mt-3 mx-auto">
-            <div class="card-body">
-              <h4 class="card-title">2020</h4>
-              <div class="list-group">
-                <a href="https://play.google.com/store/apps/details?id=com.fexed.coffeecounter" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Coffee Monitor 2.0</h5>
-                  </div>
-                  <img src="img/projects/icons/coffeemonitor2.png" class="float-end"  style="width: 4rem; margin: 8px;" alt="app icon">
-                  <p class="mb-1">v2.0 was made as a university project for the Mobile App Development course.<br><br></p>
-                  <small>University project, Android<br><img src="img/unipi.png" class="float-end" style="width: 2rem;" alt="unipi logo"> <img src="img/android.png" class="float-end" style="width: 2rem;" alt="android logo"></small>
-                </a>
-                <a href="https://github.com/fexed/WordQuizzle" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>WordQuizzle <span class="badge bg-secondary">IT</span></h5>
-                  </div>
-                  <p class="mb-1">A client-server Italian-English translation challenge system between registered users.<br>
-                  GUI was optional but I thought it was an interesting occasion to build a GUI from scratch<br>based on what I learned in
-                  UX/UI classes.</p>
-                  <small>University project, network, finished<br><img src="img/unipi.png" class="float-end" style="width: 2rem;" alt="unipi logo"></small>
-                </a>
-                <a href="https://github.com/fexed/D-RISCcompiler" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>D-RISC Compiler</h5>
-                  </div>
-                  <p class="mb-1">A simple C program that reads and executes D-RISC code,<br>as specified during the Computer Architecture course of UniPi</p>
-                  <small>Personal project, architecture, finished</small>
-                </a>
-                <a href="http://lacorsadei100.altervista.org/index.php" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>La Corsa dei 100 <span class="badge bg-secondary">IT</span></h5>
-                  </div>
-                  <p class="mb-1">Simple website for my dad's marathon events.</p>
-                  <small>Website, finished</small>
-                </a>
-              </div>
-            </div>
-          </div>
-        
-        <!-- 2019 -->
-          <div class="card mt-3 mx-auto">
-            <div class="card-body">
-              <h4 class="card-title">2019</h4>
-              <div class="list-group">
-                <a href="https://italianbrand.altervista.org/en/index.html" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Italian Brand</h5>
-                  </div>
-                  <p class="mb-1">Simple website for a fashion-related agency. I shot the photos too.</p>
-                  <small>Website, photography, finished</small>
-                </a>
-                <a href="https://github.com/fexed/ObjectStore" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Object Store <span class="badge bg-secondary">IT</span></h5>
-                  </div>
-                  <p class="mb-1">A C client-server system that stores and retrieves blocks of arbitrary data.</p>
-                  <small>University project, operative systems, finished<br><img src="img/unipi.png" class="float-end" style="width: 2rem;" alt="unipi logo"></small>
-                </a>
-                <a href="projects/cubepi.html" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>CubePi</h5>
-                    <small>April 2019</small>
-                  </div>
-                  <p class="mb-1">A retrogaming console and media center, made with a Rasperry Pi 3 B+ and an old Nintendo Gamecube</p>
-                  <small>Personal project, tinkering, finished</small>
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.fexed.rpgsheet" class="list-group-item list-group-item-action  list-group-item-success">
-                  <div>
-                    <h5>RPG Character Sheet</h5>
-                  </div>
-                  <img src="img/projects/icons/rpgcharactersheet.png" class="float-end"  style="width: 4rem; margin: 8px;" alt="app icon">
-                  <p class="mb-1">An Android app for keeping track of the informations about a RPG character.<br>Designed for D&D 5e, but
-                  useful for many other rule sets.</p>
-                  <small>Personal project, Android<br><img src="img/android.png" class="float-end" style="width: 2rem;" alt="android logo"></small>
-                </a>
-                <a href="https://github.com/fexed/LangInterpreter" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>LangInterpreter <span class="badge bg-secondary">IT</span></h5>
-                  </div>
-                  <p class="mb-1">An OCaml interpreter of a given simple programming language.</p>
-                  <small>University project, programming, finished<br><img src="img/unipi.png" class="float-end" style="width: 2rem;" alt="unipi logo"></small>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        <!-- 2018 -->
-          <div class="card mt-3 mx-auto">
-            <div class="card-body">
-              <h4 class="card-title">2018</h4>
-              <div class="list-group">
-                <a href="https://github.com/fexed/SecureDataContainer" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>SecureDataContainer <span class="badge bg-secondary">IT</span></h5>
-                  </div>
-                  <p class="mb-1">A Java generic-object secure storing system.<br>
-                    The goal of the project was to prove the student's understaing of the Object-Oriented programming.</p>
-                  <small>University project, programming, finished<br><img src="img/unipi.png" class="float-end" style="width: 2rem;" alt="unipi logo"></small>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        <!-- 2017 -->
-          <div class="card mt-3 mx-auto">
-            <div class="card-body">
-              <h4 class="card-title">2017</h4>
-              <div class="list-group">
-                <a href="https://play.google.com/store/apps/details?id=com.fexed.coffeecounter" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Coffee Monitor</h5>
-                  </div>
-                  <img src="img/projects/icons/coffeemonitor.png" class="float-end"  style="width: 4rem; margin: 8px;" alt="app icon">
-                  <p class="mb-1">An Android app for keeping track of the amount of coffee drank.<br><br></p>
-                  <small>Personal project, Android<br><img src="img/android.png" class="float-end" style="width: 2rem;" alt="android logo"></small>
-                </a>
-                <a href="projects/ocrilia.html" class="list-group-item list-group-item-action list-group-item-warning">
-                  <div>
-                    <h5>Ocrilia</h5>
-                    <small><b>Ongoing</b></small>
-                  </div>
-                  <p class="mb-1">A sci-fantasy fictional universe, which started as a homebrew D&D 5e setting</p>
-                  <small>Personal project, narrative<br><img src="img/dnd.png" class="float-end" style="width: 2rem;" alt="dnd 5e logo"><img src="img/ocrilia.png" class="float-end" style="width: 2rem;" alt="ocrilia logo"></small>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        <!-- 2016 -->
-          <div class="card mt-3 mx-auto">
-            <div class="card-body">
-              <h4 class="card-title">2016</h4>
-              <div class="list-group">
-                
-              </div>
-            </div>
-          </div>
-
-        <!-- 2015 -->
-          <div class="card mt-3 mx-auto">
-            <div class="card-body">
-              <h4 class="card-title">2015</h4>
-              <div class="list-group">
-                <a href="https://play.google.com/store/apps/details?id=com.hpspellreference.dexef.incantesimihp" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Caput Draconis Duel</h5>
-                  </div>
-                  <img src="img/projects/icons/caputdraconisspells.png" class="float-end"  style="width: 4rem; margin: 8px;" alt="app icon">
-                  <p class="mb-1">My first published Android app! Made for the Caput Draconis association, it's a database plus minigame of
-                  all the Harry Potter universe's spells.<br>By making this app I really learned a lot.<br>Unpublished in 2022 because the new multiplatform version has been published.</p>
-                  <small>Personal project, Android<br><img src="img/android.png" class="float-end" style="width: 2rem;" alt="android logo"></small>
-                </a>
-                <a href="projects/naochallenge.html" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>NAO Challenge</h5>
-                  </div>
-                  <p class="mb-1">A fun robotics tournament with a few challenges... and a lot of procrastination</p>
-                  <small>High school project, robotics, finished<br><img src="img/itis.png" class="float-end" style="height: 3rem;" alt="itis logo"></small>
-                </a>
-                <span class="list-group-item list-group-item-success">
-                  <div>
-                    <h5>TCP/UDP Communication Suite</h5>
-                  </div>
-                  <p class="mb-1">My high school graduation project, and my very first experience with Android as a developer.<br>
-                  It consists in a series of small examples of TCP and UDP: a chat, a pong game and a random-number streaming.<br>
-                  Revisited years later to comment and fix things.<br>
-                  <a class="btn btn-secondary" href="https://github.com/fexed/TCP_serverPC">Java server</a>
-                  <a class="btn btn-secondary" href="https://github.com/fexed/TCP_clientAndroid">Android client</a>
-                  <a class="btn btn-secondary" href="https://prezi.com/nnlahlhdh6g8/comunicazione-di-rete-su-android/">Prezi presentation <span class="badge bg-secondary">IT</span></a>
-                  </p>
-                  <small>High school project, experiment, Android, finished<br><img src="img/itis.png" class="float-end" style="height: 3rem;" alt="itis logo"><img src="img/android.png" class="float-end" style="width: 2rem;" alt="android logo"></small>
-                </span>
-                <a href="https://github.com/fexed/ArduinoGame" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Arduino Game</h5>
-                  </div>
-                  <p class="mb-1">A small game written for an Arduino Uno with a 16x2 screen. It consists in avoiding a series of obstacles.</p>
-                  <small>Personal project, experiment, finished</small>
-                </a>
-                <a href="https://github.com/fexed/GiocoDelQuindici" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>15 Puzzle</h5>
-                  </div>
-                  <p class="mb-1">The fifteen puzzle game, written in Java with GUI. High school project for the programming course.</p>
-                  <small>High school project, finished<br><img src="img/itis.png" class="float-end" style="height: 3rem;" alt="itis logo"></small>
-                </a>
-                <a href="https://github.com/fexed/GameOfLife" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>Game Of Life</h5>
-                  </div>
-                  <p class="mb-1">Graphic simulations of Conway's Cellular Automata, written in Java and with Javadoc.</p>
-                  <small>High school project, finished<br><img src="img/itis.png" class="float-end" style="height: 3rem;" alt="itis logo"></small>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        <!-- 2014 -->
-          <div class="card mt-3 mx-auto">
-            <div class="card-body">
-              <h4 class="card-title">2014</h4>
-              <div class="list-group">
-                <a href="https://github.com/fexed/SPP" class="list-group-item list-group-item-action list-group-item-success">
-                  <div>
-                    <h5>SPP</h5>
-                  </div>
-                  <p class="mb-1">A small platform game, born as an experiment and written during high school classes.<br>
-                  Levels are simple text files, and the goal was to explore keyboard interaction in Windows and
-                  the curses library in Linux.</p>
-                  <small class="align-bottom">Personal project, experiment, finished</small>
-                </a>
-              </div>
-            </div>
-          </div>
-    </div>
+          <p>Browse the long trail of experiments, releases, and collaborations.</p>
+        </div>
+        <div class="code-index" aria-label="Filter project timeline by year">
+          <button class="timeline-filter is-active" type="button" data-year-filter="all" aria-pressed="true">All years</button>
+          <button class="timeline-filter" type="button" data-year-filter="2026" aria-pressed="false">2026</button>
+          <button class="timeline-filter" type="button" data-year-filter="2025" aria-pressed="false">2025</button>
+          <button class="timeline-filter" type="button" data-year-filter="2024" aria-pressed="false">2024</button>
+          <button class="timeline-filter" type="button" data-year-filter="2023" aria-pressed="false">2023</button>
+          <button class="timeline-filter" type="button" data-year-filter="2022" aria-pressed="false">2022</button>
+          <button class="timeline-filter" type="button" data-year-filter="2021" aria-pressed="false">2021</button>
+          <button class="timeline-filter" type="button" data-year-filter="2020" aria-pressed="false">2020</button>
+          <button class="timeline-filter" type="button" data-year-filter="2019" aria-pressed="false">2019</button>
+          <button class="timeline-filter" type="button" data-year-filter="2018" aria-pressed="false">2018</button>
+          <button class="timeline-filter" type="button" data-year-filter="2017" aria-pressed="false">2017</button>
+          <button class="timeline-filter" type="button" data-year-filter="2016" aria-pressed="false">2016</button>
+          <button class="timeline-filter" type="button" data-year-filter="2015" aria-pressed="false">2015</button>
+          <button class="timeline-filter" type="button" data-year-filter="2014" aria-pressed="false">2014</button>
+        </div>
+        <div class="timeline-layout">
+          <div class="timeline-ruler" id="timeline-ruler" aria-hidden="true"></div>
+          <p class="timeline-status" id="timeline-status" role="status">Loading project timeline...</p>
+          <div class="timeline-list" id="project-timeline"></div>
+        </div>
+        <p class="timeline-note">Ranges span the earliest to latest available portfolio or update mention; work may not have been continuous or represent the full project lifespan.</p>
+      </section>
+    </main>
 
     <!-- footer -->
     <footer class="footer mt-auto py-3">
@@ -524,5 +125,6 @@
         <span class="text-muted">Powered by <a href="https://getbootstrap.com/">Bootstrap v5.3.2</a>, made by <b>Federico Matteoni</b></span>
       </div>
     </footer>
+    <script src="js/projects.js" defer></script>
   </body>
 </html>

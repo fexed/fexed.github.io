@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Writing and updates from Federico Matteoni.">
+    <meta name="theme-color" content="#070b16">
+    <link rel="icon" href="img/icon32.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="css/site.css">
+    <title>fexed | Blog</title>
+  </head>
+  <body class="section-page">
+    <header class="section-header">
+      <a class="wordmark" href="index.html"><img src="img/icon_w.png" alt="" width="32" height="32"><span>fexed</span></a>
+      <nav class="section-nav" aria-label="Main navigation">
+        <a href="about.html">About</a><a href="blog.html" aria-current="page">Blog</a><a href="projects.html">Code</a><a href="photos.html">Photos</a><a href="others.html">Others</a>
+      </nav>
+    </header>
+    <main class="section-main updates-main blog-main">
+      <p class="section-eyebrow">02 / JOURNAL</p>
+      <h1>Blog</h1>
+      <p class="section-lede">Small dispatches from life, projects, and the things happening in between.</p>
+      <p class="blog-longform">For longer writing, visit <a href="https://fexed.wordpress.com/">Soliloquio</a>.</p>
+      <div class="blog-updates-frame" role="region" aria-label="Chat-style updates" tabindex="0">
+        <section class="archive-year" aria-labelledby="blog-2026-title">
+          <h2 id="blog-2026-title">2026</h2>
+          <div id="blog-updates-2026" class="archive-content" aria-live="polite">Loading updates…</div>
+        </section>
+        <section class="archive-year" aria-labelledby="blog-2024-title">
+          <h2 id="blog-2024-title">2024</h2>
+          <div id="blog-updates-2024" class="archive-content" aria-live="polite">Loading updates…</div>
+        </section>
+        <section class="archive-year" aria-labelledby="blog-2023-title">
+          <h2 id="blog-2023-title">2023</h2>
+          <div id="blog-updates-2023" class="archive-content" aria-live="polite">Loading updates…</div>
+        </section>
+      </div>
+    </main>
+    <dialog class="blog-image-dialog" aria-label="Enlarged update photo">
+      <form method="dialog"><button class="blog-image-close" aria-label="Close enlarged photo">Close <span aria-hidden="true">×</span></button></form>
+      <img alt="">
+    </dialog>
+    <footer class="section-footer"><span>Federico Matteoni</span><span>02 / 05</span></footer>
+    <script>
+      const imageDialog = document.querySelector(".blog-image-dialog");
+      const enlargedImage = imageDialog.querySelector("img");
+
+      function arrangeUpdateImages(container) {
+        for (const bubble of container.querySelectorAll(".d-flex.flex-row > div")) {
+          const mediaNodes = new Set();
+          for (const image of bubble.querySelectorAll("img")) {
+            const link = image.closest("a");
+            mediaNodes.add(link && link.parentElement === bubble ? link : image);
+          }
+          if (!mediaNodes.size) continue;
+
+          const copy = document.createElement("div");
+          copy.className = "blog-message-copy";
+          const media = document.createElement("div");
+          media.className = "blog-message-media";
+          for (const child of Array.from(bubble.childNodes)) {
+            if (mediaNodes.has(child)) {
+              const image = child.matches("img") ? child : child.querySelector("img");
+              let link = child;
+              if (image === child) {
+                link = document.createElement("a");
+                link.href = image.src;
+                link.append(image);
+              }
+              link.classList.add("blog-image-link");
+              link.dataset.zoomSrc = image.src;
+              if (!image.alt || image.alt === "...") image.alt = "Update photo";
+              media.append(link);
+            } else if (!(child.nodeType === Node.ELEMENT_NODE && child.tagName === "BR")) {
+              copy.append(child);
+            }
+          }
+          bubble.classList.add("has-blog-media");
+          bubble.replaceChildren(copy, media);
+        }
+      }
+
+      document.querySelector(".blog-updates-frame").addEventListener("click", (event) => {
+        const link = event.target.closest(".blog-image-link");
+        if (!link) return;
+        event.preventDefault();
+        enlargedImage.src = link.dataset.zoomSrc;
+        enlargedImage.alt = link.querySelector("img").alt;
+        imageDialog.showModal();
+      });
+
+      imageDialog.addEventListener("click", (event) => {
+        if (event.target === imageDialog) imageDialog.close();
+      });
+
+      for (const year of ["2026", "2024", "2023"]) {
+        const target = document.getElementById(`blog-updates-${year}`);
+        fetch(`updates/${year}.html`)
+          .then((response) => {
+            if (!response.ok) throw new Error(`Could not load the ${year} updates (${response.status}).`);
+            return response.text();
+          })
+          .then((markup) => {
+            target.innerHTML = markup;
+            arrangeUpdateImages(target);
+            target.removeAttribute("aria-live");
+          })
+          .catch((error) => {
+            target.textContent = error.message;
+          });
+      }
+    </script>
+  </body>
+</html>

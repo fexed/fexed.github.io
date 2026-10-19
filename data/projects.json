@@ -1,0 +1,864 @@
+{
+  "latestArchiveYear": 2026,
+  "projects": [
+    {
+      "title": "Tickfolio",
+      "years": [
+        2026
+      ],
+      "description": "A paper-inspired Android checklist app with photo attachments, scheduled reminders, and location alerts.",
+      "status": "",
+      "metadata": [
+        "Android"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/Tickfolio"
+        }
+      ],
+      "startYear": 2026,
+      "endYear": 2026
+    },
+    {
+      "title": "Inconscio",
+      "years": [
+        2024,
+        2025,
+        2026
+      ],
+      "description": "Companion app for a tabletop RPG that's being design by a friend of mine. This can be considered my first freelance paid work, and it's yet another fully multiplatform app. I'll work on some customly designed layouts too, so a lot of Canvases to be tested on both platforms.",
+      "status": "",
+      "metadata": [
+        "Android, iOS"
+      ],
+      "links": [
+        {
+          "label": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.fexed.inconscio"
+        }
+      ],
+      "startYear": 2024,
+      "endYear": 2026
+    },
+    {
+      "title": "Where?",
+      "years": [
+        2024
+      ],
+      "description": "A geoguessr-like game where you are presented with a small patch of the Earth and you have to guess where are you, by stating the city or the nation, and receving points. Very small app built in few hours during a workshop with high-school students in Garmin. Currently not published.",
+      "status": "Completed",
+      "metadata": [
+        "Android, finished"
+      ],
+      "links": [],
+      "startYear": 2024,
+      "endYear": 2024
+    },
+    {
+      "title": "Home Notes",
+      "years": [
+        2024
+      ],
+      "description": "Another fully multiplatform mobile app, this time with a small self-hosted server. The goal is to self-host and share ideas and small notes that I take during the day. It's a yet another experiment built with KMM, Compose Multiplatform and few other libraries. Not public yet!",
+      "status": "On hold",
+      "metadata": [
+        "Personal project, Android, iOS, on hold"
+      ],
+      "links": [],
+      "startYear": 2024,
+      "endYear": 2024
+    },
+    {
+      "title": "Inconsistencies Detector",
+      "years": [
+        2024
+      ],
+      "description": "A project for the Human Language Technologies course, consisting of a small model that detects iconsistencies in natural language paragraphs.",
+      "status": "On hold",
+      "metadata": [
+        "University project, machine learning, on hold"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/Inconsistencies-Detector"
+        }
+      ],
+      "startYear": 2024,
+      "endYear": 2024
+    },
+    {
+      "title": "Eye4Eye",
+      "years": [
+        2024
+      ],
+      "description": "A small playground for the Prisoner's Dilemma. I plan on making a modular environment where to deploy a Reinforcement Learning actor and see what happens.",
+      "status": "",
+      "metadata": [
+        "Personal project, game theory"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/eye4eye"
+        }
+      ],
+      "startYear": 2024,
+      "endYear": 2024
+    },
+    {
+      "title": "L'Urlo della Colomba",
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "description": "An RPG made with RPG Maker MZ. Coming soon (-ish, it's a spare time project so I don't know how often and how much I will work on this)",
+      "status": "On hold",
+      "metadata": [
+        "Personal project, game, on hold"
+      ],
+      "links": [],
+      "startYear": 2023,
+      "endYear": 2025
+    },
+    {
+      "title": "ndoTap",
+      "years": [
+        2023
+      ],
+      "description": "My first web app, built with NuxtJS. Born as a UI validation tool, it presents the user with a screenshot and a simple task, asking the question \"where would you tap?\". By gathering these data as an heatmap, the developer can decide wether or not the GUI is well thought out.",
+      "status": "On hold",
+      "metadata": [
+        "Personal project, web app, on hold"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/ndoTap"
+        }
+      ],
+      "startYear": 2023,
+      "endYear": 2023
+    },
+    {
+      "title": "NuzlockOne",
+      "years": [
+        2023,
+        2024
+      ],
+      "description": "A fully multiplatform App built with Kotlin Multiplatform, Compose Multiplatform, Ktor and more.A companion for those brave gamers that undertake the final Pokémon challenge: a Nuzlocke!There are few elements I am not satisfied with, that I want to work on before releasing it.",
+      "status": "On hold",
+      "metadata": [
+        "Personal project, Android, iOS, on hold"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/nuzlockone"
+        }
+      ],
+      "startYear": 2023,
+      "endYear": 2024
+    },
+    {
+      "title": "Cosplay Means Be Whatever You Want",
+      "years": [
+        2023
+      ],
+      "description": "A tribute to My Dress-Up Darling and the cosplay world as a whole, realised together with Ciocoreto: a 10 hours long shooting session in studio to make a collage of all Marin Kitagawa's cosplays in a single image!",
+      "status": "Completed",
+      "metadata": [
+        "Personal project, photography, cosplay, finished"
+      ],
+      "links": [
+        {
+          "label": "Visit project",
+          "url": "https://www.instagram.com/p/CvfYhxjoGcZ/"
+        }
+      ],
+      "startYear": 2023,
+      "endYear": 2023
+    },
+    {
+      "title": "Statues, part one",
+      "years": [
+        2023
+      ],
+      "description": "My very first \"big\" photography project. Inspired by classical sculptures, the idea is to capture those atmospheres and vibes into photography, with delicate poses of anonymous subjects lightly covered by white cloth.",
+      "status": "Completed",
+      "metadata": [
+        "Personal project, photography, NSFW, finished"
+      ],
+      "links": [
+        {
+          "label": "Visit project",
+          "url": "https://fexed.gumroad.com/l/statues-pt1"
+        }
+      ],
+      "startYear": 2023,
+      "endYear": 2023
+    },
+    {
+      "title": "Parallel Huffman",
+      "years": [
+        2023
+      ],
+      "description": "A project for the Parallel Systems course, where I implemented a parallel version of the Huffman Coding algorithm.",
+      "status": "Completed",
+      "metadata": [
+        "University project, parallel programming, finished"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/Notes/tree/master/UniPi_CSMaster_AI/ParallelandDistributedSystems/code/huffman"
+        }
+      ],
+      "startYear": 2023,
+      "endYear": 2023
+    },
+    {
+      "title": "Wear Countdown",
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "description": "A proof-of-concept of a countdown app for Wear OS, built using Jetpack Compose and its navigation system, along with the Horologist library. It provides support to Tiles and Complications!",
+      "status": "Ongoing",
+      "metadata": [
+        "Personal project, Android, ongoing"
+      ],
+      "links": [
+        {
+          "label": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.fexed.wearcountdown"
+        }
+      ],
+      "startYear": 2023,
+      "endYear": 2026
+    },
+    {
+      "title": "Artificial Creativity",
+      "years": [
+        2023
+      ],
+      "description": "As a project for the ISPR course, I've written a small review of current common prompt-based and prompt-free image, text and music generation systems. While writing this review I learned a lot about the inner workings of Stable Diffusion, DALL-E and StyleGAN, all three being really fascinating.",
+      "status": "Completed",
+      "metadata": [
+        "University project, publication, review, machine learning, finished"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/Notes/blob/master/UniPi_CSMaster_AI/IntelligentSystemsforPatternRecognition/artisticcreativity/artisticcreativity.pdf"
+        }
+      ],
+      "startYear": 2023,
+      "endYear": 2023
+    },
+    {
+      "title": "Be My Boulder",
+      "years": [
+        2023
+      ],
+      "description": "Made in collaboration with Giuseppe Gatto and Duccio Breschi, it's a cloud-based ranking systems for bouldering routes, used to keep track of the routes and of the users' scores. It includes a web app for the users, backend and a mobile app for the admins to add and manage the routes and the routes' photos. I've worked on the mobile apps, which are currently not publicly available.",
+      "status": "",
+      "metadata": [
+        "Team project, Android, iOS"
+      ],
+      "links": [],
+      "startYear": 2023,
+      "endYear": 2023
+    },
+    {
+      "title": "The HHL Algorithm",
+      "years": [
+        2022
+      ],
+      "description": "A few-pages long report on the HHL algorithm, a quantum approach to solving linear systems of equations and a very interesting dive into the perks of quantum computing.",
+      "status": "Completed",
+      "metadata": [
+        "University project, publication, review, quantum computing, finished"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/Notes/blob/master/UniPi_CSMaster_AI/IntroductiontoQuantumComputing/hhlalgorithm.pdf"
+        }
+      ],
+      "startYear": 2022,
+      "endYear": 2022
+    },
+    {
+      "title": "Caput Draconis - Duels",
+      "years": [
+        2022
+      ],
+      "description": "Remake of my very first Android app, this time built with Kotlin Multiplaform, SwiftUI and Jetpack Compose for both Android and iOS. Fun experiment where I learned a lot, and my very first iOS app! Play Store App Store GitHub Repo",
+      "status": "Completed",
+      "metadata": [
+        "Personal project, Android, iOS, finished"
+      ],
+      "links": [
+        {
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.fexed.caputdraconis.android"
+        },
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/us/app/caput-draconis-duels/id6444910149"
+        },
+        {
+          "label": "GitHub Repo",
+          "url": "https://github.com/fexed/CaputDraconis-multiplatform"
+        }
+      ],
+      "startYear": 2022,
+      "endYear": 2022
+    },
+    {
+      "title": "Exoplanet Explorer",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "description": "Very small app built in a few hours: a minimal browser of some data about exoplanets, taken from NASA's archives. A one-night project built to experiment for the first time with Jetpack Compose and hoisting.",
+      "status": "Ongoing",
+      "metadata": [
+        "Personal project, Android, ongoing"
+      ],
+      "links": [
+        {
+          "label": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.fexed.exoplanetexplorer"
+        },
+        {
+          "label": "View source on GitHub",
+          "url": "https://github.com/fexed/ExoplanetExplorer"
+        }
+      ],
+      "startYear": 2022,
+      "endYear": 2026
+    },
+    {
+      "title": "Radar Hunt",
+      "years": [
+        2022,
+        2024
+      ],
+      "description": "A mobile game based on touch perception: no eyes required.A sonar-like vibration tells you where the target is, and the goal is to find it.",
+      "status": "Completed",
+      "metadata": [
+        "Personal project, Android, finished"
+      ],
+      "links": [
+        {
+          "label": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.fexed.firetap"
+        }
+      ],
+      "startYear": 2022,
+      "endYear": 2024
+    },
+    {
+      "title": "Continual Learning for Human State Monitoring",
+      "years": [
+        2022
+      ],
+      "description": "Empirical evaluation assessing the ability of popular Continual Learning strategies in mitigating forgetting on Human State Monitoring data. Accepted to a presentation at the ESANN 2022 conference.",
+      "status": "Completed",
+      "metadata": [
+        "Publication, machine learning, finished"
+      ],
+      "links": [
+        {
+          "label": "Read paper",
+          "url": "https://arxiv.org/abs/2207.00010"
+        }
+      ],
+      "startYear": 2022,
+      "endYear": 2022
+    },
+    {
+      "title": "Pinball on Android",
+      "years": [
+        2022,
+        2023
+      ],
+      "description": "A porting of the fantastic Space Cadet 3D Pinball game from '90s Windows era. Built from the source decompiled by k4zmu2a and an initial Android port from iscle.",
+      "status": "Completed",
+      "metadata": [
+        "Personal project, Android, finished"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/Pinball-on-Android"
+        }
+      ],
+      "startYear": 2022,
+      "endYear": 2023
+    },
+    {
+      "title": "Ferris Sweep",
+      "years": [
+        2022
+      ],
+      "description": "I built my first splitted keyboard. Very fun project, very cool keyboard and will probably make more.",
+      "status": "Completed",
+      "metadata": [
+        "Personal project, tinkering, finished"
+      ],
+      "links": [
+        {
+          "label": "Watch video",
+          "url": "https://youtu.be/HpJ4knuUn-I"
+        }
+      ],
+      "startYear": 2022,
+      "endYear": 2022
+    },
+    {
+      "title": "The Character Vault",
+      "years": [
+        2022
+      ],
+      "description": "Born as a hands-on experience to self-teach Kotlin and the MVVM design pattern and slowly evolved into a fully-fledged app, thanks to the feedbacks of the users on my Telegram channel.",
+      "status": "Completed",
+      "metadata": [
+        "Personal project, Android, finished"
+      ],
+      "links": [
+        {
+          "label": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.fexed.charactersheet"
+        }
+      ],
+      "startYear": 2022,
+      "endYear": 2022
+    },
+    {
+      "title": "Neural Networks from Scratch",
+      "years": [
+        2022
+      ],
+      "description": "A neural network with regularization, momentum and other features. Made from scratch as a Master's Degree project, in collaboration with Sergio Latrofa and Riccardo Parente.",
+      "status": "Completed",
+      "metadata": [
+        "University project, machine learning, finished"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/CM-ML-project"
+        }
+      ],
+      "startYear": 2022,
+      "endYear": 2022
+    },
+    {
+      "title": "Graduation Thesis IT",
+      "years": [
+        2021
+      ],
+      "description": "A comparison between continual learning approaches on human state monitoring data.",
+      "status": "Completed",
+      "metadata": [
+        "University project, machine learning, continual learning, finished"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/gradthesis/blob/main/thesis_it.pdf"
+        }
+      ],
+      "startYear": 2021,
+      "endYear": 2021
+    },
+    {
+      "title": "APIForecast",
+      "years": [
+        2021
+      ],
+      "description": "The purpose of this project is to demonstrate the application of three main forecasting functions: single exponential smoothing, double exponential smoothing and Holt-Winters forecasting.Made in collaboration with Simone Pepi.",
+      "status": "Completed",
+      "metadata": [
+        "University project, forecasting, finished"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/APIForecast"
+        }
+      ],
+      "startYear": 2021,
+      "endYear": 2021
+    },
+    {
+      "title": "WordQuizzle IT",
+      "years": [
+        2020
+      ],
+      "description": "A client-server Italian-English translation challenge system between registered users. GUI was optional but I thought it was an interesting occasion to build a GUI from scratchbased on what I learned in UX/UI classes.",
+      "status": "Completed",
+      "metadata": [
+        "University project, network, finished"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/WordQuizzle"
+        }
+      ],
+      "startYear": 2020,
+      "endYear": 2020
+    },
+    {
+      "title": "D-RISC Compiler",
+      "years": [
+        2020
+      ],
+      "description": "A simple C program that reads and executes D-RISC code,as specified during the Computer Architecture course of UniPi",
+      "status": "Completed",
+      "metadata": [
+        "Personal project, architecture, finished"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/D-RISCcompiler"
+        }
+      ],
+      "startYear": 2020,
+      "endYear": 2020
+    },
+    {
+      "title": "La Corsa dei 100 IT",
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "description": "Simple website for my dad's marathon events.",
+      "status": "Ongoing",
+      "metadata": [
+        "Website, ongoing"
+      ],
+      "links": [
+        {
+          "label": "Visit project",
+          "url": "http://lacorsadei100.altervista.org/index.php"
+        }
+      ],
+      "startYear": 2020,
+      "endYear": 2026
+    },
+    {
+      "title": "Italian Brand",
+      "years": [
+        2019
+      ],
+      "description": "Simple website for a fashion-related agency. I shot the photos too.",
+      "status": "Completed",
+      "metadata": [
+        "Website, photography, finished"
+      ],
+      "links": [
+        {
+          "label": "Visit project",
+          "url": "https://italianbrand.altervista.org/en/index.html"
+        }
+      ],
+      "startYear": 2019,
+      "endYear": 2019
+    },
+    {
+      "title": "Object Store IT",
+      "years": [
+        2019
+      ],
+      "description": "A C client-server system that stores and retrieves blocks of arbitrary data.",
+      "status": "Completed",
+      "metadata": [
+        "University project, operative systems, finished"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/ObjectStore"
+        }
+      ],
+      "startYear": 2019,
+      "endYear": 2019
+    },
+    {
+      "title": "CubePi",
+      "years": [
+        2019
+      ],
+      "description": "A retrogaming console and media center, made with a Rasperry Pi 3 B+ and an old Nintendo Gamecube",
+      "status": "Completed",
+      "metadata": [
+        "April 2019 ? Personal project, tinkering, finished"
+      ],
+      "links": [
+        {
+          "label": "Read project page",
+          "url": "projects/cubepi.html"
+        }
+      ],
+      "startYear": 2019,
+      "endYear": 2019
+    },
+    {
+      "title": "RPG Character Sheet",
+      "years": [
+        2019
+      ],
+      "description": "An Android app for keeping track of the informations about a RPG character.Designed for D&D 5e, but useful for many other rule sets.",
+      "status": "",
+      "metadata": [
+        "Personal project, Android"
+      ],
+      "links": [
+        {
+          "label": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.fexed.rpgsheet"
+        }
+      ],
+      "startYear": 2019,
+      "endYear": 2019
+    },
+    {
+      "title": "LangInterpreter IT",
+      "years": [
+        2019
+      ],
+      "description": "An OCaml interpreter of a given simple programming language.",
+      "status": "Completed",
+      "metadata": [
+        "University project, programming, finished"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/LangInterpreter"
+        }
+      ],
+      "startYear": 2019,
+      "endYear": 2019
+    },
+    {
+      "title": "SecureDataContainer IT",
+      "years": [
+        2018
+      ],
+      "description": "A Java generic-object secure storing system. The goal of the project was to prove the student's understaing of the Object-Oriented programming.",
+      "status": "Completed",
+      "metadata": [
+        "University project, programming, finished"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/SecureDataContainer"
+        }
+      ],
+      "startYear": 2018,
+      "endYear": 2018
+    },
+    {
+      "title": "Coffee Monitor",
+      "years": [
+        2017,
+        2020
+      ],
+      "description": "An Android app for keeping track of the amount of coffee drank. v2.0 was made as a university project for the Mobile App Development course.",
+      "status": "",
+      "metadata": [
+        "Personal project, Android",
+        "University project, Android"
+      ],
+      "links": [
+        {
+          "label": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.fexed.coffeecounter"
+        }
+      ],
+      "startYear": 2017,
+      "endYear": 2020
+    },
+    {
+      "title": "Ocrilia",
+      "years": [
+        2017,
+        2024
+      ],
+      "description": "A sci-fantasy fictional universe, which started as a homebrew D&D 5e setting",
+      "status": "Ongoing",
+      "metadata": [
+        "Ongoing ? Personal project, narrative"
+      ],
+      "links": [
+        {
+          "label": "Read project page",
+          "url": "projects/ocrilia.html"
+        }
+      ],
+      "startYear": 2017,
+      "endYear": 2024
+    },
+    {
+      "title": "Caput Draconis Duel",
+      "years": [
+        2015
+      ],
+      "description": "My first published Android app! Made for the Caput Draconis association, it's a database plus minigame of all the Harry Potter universe's spells.By making this app I really learned a lot.Unpublished in 2022 because the new multiplatform version has been published.",
+      "status": "",
+      "metadata": [
+        "Personal project, Android"
+      ],
+      "links": [
+        {
+          "label": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.hpspellreference.dexef.incantesimihp"
+        }
+      ],
+      "startYear": 2015,
+      "endYear": 2015
+    },
+    {
+      "title": "NAO Challenge",
+      "years": [
+        2015
+      ],
+      "description": "A fun robotics tournament with a few challenges... and a lot of procrastination",
+      "status": "Completed",
+      "metadata": [
+        "High school project, robotics, finished"
+      ],
+      "links": [
+        {
+          "label": "Read project page",
+          "url": "projects/naochallenge.html"
+        }
+      ],
+      "startYear": 2015,
+      "endYear": 2015
+    },
+    {
+      "title": "TCP/UDP Communication Suite",
+      "years": [
+        2015
+      ],
+      "description": "My high school graduation project, and my very first experience with Android as a developer. It consists in a series of small examples of TCP and UDP: a chat, a pong game and a random-number streaming. Revisited years later to comment and fix things. Java server Android client Prezi presentation IT",
+      "status": "Completed",
+      "metadata": [
+        "High school project, experiment, Android, finished"
+      ],
+      "links": [
+        {
+          "label": "Java server",
+          "url": "https://github.com/fexed/TCP_serverPC"
+        },
+        {
+          "label": "Android client",
+          "url": "https://github.com/fexed/TCP_clientAndroid"
+        },
+        {
+          "label": "Prezi presentation IT",
+          "url": "https://prezi.com/nnlahlhdh6g8/comunicazione-di-rete-su-android/"
+        }
+      ],
+      "startYear": 2015,
+      "endYear": 2015
+    },
+    {
+      "title": "Arduino Game",
+      "years": [
+        2015
+      ],
+      "description": "A small game written for an Arduino Uno with a 16x2 screen. It consists in avoiding a series of obstacles.",
+      "status": "Completed",
+      "metadata": [
+        "Personal project, experiment, finished"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/ArduinoGame"
+        }
+      ],
+      "startYear": 2015,
+      "endYear": 2015
+    },
+    {
+      "title": "15 Puzzle",
+      "years": [
+        2015
+      ],
+      "description": "The fifteen puzzle game, written in Java with GUI. High school project for the programming course.",
+      "status": "Completed",
+      "metadata": [
+        "High school project, finished"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/GiocoDelQuindici"
+        }
+      ],
+      "startYear": 2015,
+      "endYear": 2015
+    },
+    {
+      "title": "Game Of Life",
+      "years": [
+        2015
+      ],
+      "description": "Graphic simulations of Conway's Cellular Automata, written in Java and with Javadoc.",
+      "status": "Completed",
+      "metadata": [
+        "High school project, finished"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/GameOfLife"
+        }
+      ],
+      "startYear": 2015,
+      "endYear": 2015
+    },
+    {
+      "title": "SPP",
+      "years": [
+        2014
+      ],
+      "description": "A small platform game, born as an experiment and written during high school classes. Levels are simple text files, and the goal was to explore keyboard interaction in Windows and the curses library in Linux.",
+      "status": "Completed",
+      "metadata": [
+        "Personal project, experiment, finished"
+      ],
+      "links": [
+        {
+          "label": "View on GitHub",
+          "url": "https://github.com/fexed/SPP"
+        }
+      ],
+      "startYear": 2014,
+      "endYear": 2014
+    }
+  ]
+}

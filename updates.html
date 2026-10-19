@@ -1,25 +1,56 @@
-<div class="flex-grow-1 align-content-center">
-    <div class="card mt-3 mx-auto">
-      <div class="card-header text-center">
-        <h5 class="card-title">Quick Updates</h5>
-      </div>
-      <div class="card-body align-items-center" style="position: relative; height: 400px; overflow-y: auto;">
-        <div id="2024">
-          <script crossorigin="anonymous"> 
-            $(document).ready(function(){
-              $("#2024").load("updates/2024.html"); 
-            });
-          </script>
-        </div>
-
-        <div id="2023">
-          <script crossorigin="anonymous"> 
-            $(document).ready(function(){
-              $("#2023").load("updates/2023.html"); 
-            });
-          </script>
-        </div>
-
-      </div>
-    </div>
-  </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Updates from Federico Matteoni.">
+    <meta name="theme-color" content="#070b16">
+    <link rel="icon" href="img/icon32.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="css/site.css">
+    <title>fexed | Updates</title>
+  </head>
+  <body class="section-page">
+    <header class="section-header">
+      <a class="wordmark" href="index.html"><img src="img/icon_w.png" alt="" width="32" height="32"><span>fexed</span></a>
+      <nav class="section-nav" aria-label="Main navigation">
+        <a href="about.html">About</a><a href="blog.html" aria-current="page">Blog</a><a href="projects.html">Code</a><a href="photos.html">Photos</a><a href="others.html">Others</a>
+      </nav>
+    </header>
+    <main class="section-main updates-main">
+      <p class="section-eyebrow">02 / JOURNAL</p>
+      <h1>Updates</h1>
+      <p class="section-lede">Short notes from life, projects, and things worth remembering.</p>
+      <section class="archive-year" aria-labelledby="updates-2026-title">
+        <h2 id="updates-2026-title">2026</h2>
+        <div id="updates-2026" class="archive-content" aria-live="polite">Loading updates…</div>
+      </section>
+      <section class="archive-year" aria-labelledby="updates-2024-title">
+        <h2 id="updates-2024-title">2024</h2>
+        <div id="updates-2024" class="archive-content" aria-live="polite">Loading updates…</div>
+      </section>
+      <section class="archive-year" aria-labelledby="updates-2023-title">
+        <h2 id="updates-2023-title">2023</h2>
+        <div id="updates-2023" class="archive-content" aria-live="polite">Loading updates…</div>
+      </section>
+      <a class="section-back" href="blog.html">← Back to Blog</a>
+    </main>
+    <footer class="section-footer"><span>Federico Matteoni</span><span>02 / 05</span></footer>
+    <script>
+      for (const year of ["2026", "2024", "2023"]) {
+        const target = document.getElementById(`updates-${year}`);
+        fetch(`updates/${year}.html`)
+          .then((response) => {
+            if (!response.ok) throw new Error(`Could not load the ${year} archive (${response.status}).`);
+            return response.text();
+          })
+          .then((markup) => {
+            target.innerHTML = markup;
+            target.removeAttribute("aria-live");
+          })
+          .catch((error) => {
+            target.textContent = error.message;
+          });
+      }
+    </script>
+  </body>
+</html>

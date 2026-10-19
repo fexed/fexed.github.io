@@ -1,224 +1,72 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Works and projects of Federico Matteoni">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Federico Matteoni's personal space on the web.">
     <meta name="author" content="Federico Matteoni">
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Favicons -->
+    <meta name="theme-color" content="#070b16">
     <link rel="icon" href="img/icon32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="img/icon16.png" sizes="16x16" type="image/png">
-
-    <!-- Theme -->
-    <meta name="theme-color" content="#004680">
-
-    <title>fexed</title>
+    <link rel="stylesheet" href="css/site.css">
+    <title>fexed | Home</title>
   </head>
-  <body class="d-flex flex-column">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- navbar -->
-    <div class="nav-scroller">
-      <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#"><img src="img/icon_w.png" width="30" height="30"> fexed</a>
-        <ul class = "navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.flickr.com/people/157105673@N08">Photos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://fexed.notion.site/d1f97c2f4f094c33954f26e4bd0d8f04?v=1ec2c14ee40d4f4e8c61f5031d108387&pvs=4">Notes</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+  <body class="home">
+    <div class="sky" aria-hidden="true"></div>
+    <canvas class="starfield" id="starfield" aria-hidden="true"></canvas>
 
-    <!-- main body -->
-    <div class="container mt-5">
-      
-      <div class="card text-center mt-3 mx-auto">
-        <div class="card-header">
-          <h5 class="card-title">Currently Working on</h5>
-        </div>
-        <div class="row row-cols-xxl-3 row-cols-lg-2d-flex justify-content-center">
-          <!-- GitHub -->
-          <div class="flex-grow-1 align-content-center mx-3" style="max-width: 25rem;">
-            <div class="card text-center my-3 mx-auto" >
-              <div class="card-header">
-                <h6 class="card-title">Studying</h6>
-                <p class="fw-lighter card-subtitle">MsC in AI</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex-grow-1 align-content-center mx-3" style="max-width: 25rem;">
-            <div class="card text-center my-3 mx-auto" >
-              <div class="card-header">
-                <h6 class="card-title">Inconscio</h6>
-                <p class="fw-lighter card-subtitle">App research & development</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex-grow-1 align-content-center mx-3" style="max-width: 25rem;">
-            <div class="card text-center my-3 mx-auto" >
-              <div class="card-header">
-                <h6 class="card-title">Home office</h6>
-                <p class="fw-lighter card-subtitle">IRL task</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="fexed home">
+        <img src="img/icon_w.png" alt="" width="32" height="32">
+        <span>fexed</span>
+      </a>
+      <span class="header-note">A small corner of the universe</span>
+    </header>
+
+    <main class="home-main">
+      <div class="intro">
+        <p class="eyebrow">FEDERICO MATTEONI <span aria-hidden="true">/</span> PERSONAL SPACE</p>
+        <h1>Somewhere under the same sky.</h1>
       </div>
-
-      <!-- ABOUT -->
-      <div class="row row-cols-xxl-4 row-cols-lg-2 d-flex justify-content-center">
-        <div id="updatesChat">
-          <script crossorigin="anonymous"> 
-            $(document).ready(function(){
-              $("#updatesChat").load("updates.html"); 
-            });
-          </script>
+      <aside class="latest-update" aria-label="Latest update" aria-live="polite">
+        <img alt="" width="36" height="36" hidden>
+        <div class="latest-update-copy">
+          <p class="latest-update-date">LATEST NOTE</p>
+          <p class="latest-update-text">Loading latest update…</p>
+          <a href="blog.html" hidden>Read the update <span aria-hidden="true">↗</span></a>
         </div>
+      </aside>
 
-        <div class="flex-grow-1 align-content-center" style="max-width: 80rem;">
-          <div class="card text-center mt-3 mx-auto" >
-            <div class="card-header">
-              <h5 class="card-title">About</h5>
-            </div>
-            <!-- <img src="img/photos/me.jpg" class="card-img-top" alt="..."> -->
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2">Federico Matteoni</h6>
-              <p class="card-text">
-                Born on <a href="https://en.wikipedia.org/wiki/August_9">August 9th</a> <a href="https://en.wikipedia.org/wiki/1996">1996</a> in <a href="https://goo.gl/maps/43ncwKTcvs2JKY2U6"><b>Lucca, Italy</b></a>.<br>
-                <br>
-                <b>Currently</b><br>Software Engineer @ <a href="https://www.navionics.com/"><b>Garmin Italy Technologies</b></a><br><br>Artificial Intelligence @ <a href="https://www.unipi.it/"><b>UniPi</b></a><br>
-                <br>
-                Latest blog post (May 1st, 2024)<br><a href="https://fexed.wordpress.com/2024/05/01/la-prima-fantasia-finale/" class="btn btn-secondary">La Prima Fantasia Finale <span class="badge bg-secondary">IT</span></a>
-              </p>
-            </div>
+      <section class="orbit" aria-label="Explore the site">
+        <nav class="orbit-links" aria-label="Main navigation">
+          <a class="orbit-link link-about" href="about.html"><span>01</span> About</a>
+          <a class="orbit-link link-blog" href="blog.html"><span>02</span> Blog</a>
+          <a class="orbit-link link-code" href="projects.html"><span>03</span> Code</a>
+          <a class="orbit-link link-photos" href="https://www.flickr.com/photos/157105673@N08/"><span>04</span> Photos <span class="nsfw-tag">NSFW</span></a>
+          <a class="orbit-link link-others" href="others.html"><span>05</span> Others</a>
+        </nav>
+
+        <figure class="moon-figure">
+          <div class="moon-halo">
+            <canvas id="moon" width="512" height="512" role="img" aria-label="The current phase of the Moon"></canvas>
           </div>
-        </div>
+          <figcaption class="moon-caption">
+            <span class="moon-label" id="moon-phase">Looking up</span>
+            <span class="moon-date" id="moon-date">The night sky, from here</span>
+          </figcaption>
+        </figure>
+      </section>
 
-        <!-- CONTACTS -->
-        <div class="flex-grow-1 align-content-center" style="max-width: 80rem;">
-          <div class="card text-center mt-3 mx-auto" >
-            <div class="card-header">
-              <h5 class="card-title">Contacts</h5>
-            </div>
-            <div class="card-body">
-              <a href="https://www.paypal.me/fexed" class="btn btn-secondary">PayPal</a>
-              <a href="https://fexed.gumroad.com/" class="btn btn-secondary">Gumroade</a>
-              <ul class="list-group mt-2">
-                <a href="files/CV.pdf" class="list-group-item list-group-item-action"><u>Curriculum Vitae</u></a>
-                <a href="mailto:federicomatteoni@live.it" class="list-group-item list-group-item-action"><u>federicomatteoni@live.it</u> <span class="badge bg-secondary">Pref.</span></a>
-                <a href="https://telegram.me/fexed" class="list-group-item list-group-item-action"><u>Telegram</u> <span class="badge bg-secondary">Pref.</span></a>
-              </ul>
-            </div>
-            <div class="card-body">
-
-              <div class="row">
-                <div class="col-sm w-25">
-                  <a href="https://github.com/fexed" class="list-group-item list-group-item-action"><img class="img-fluid" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/></a>
-                </div>
-                <div class="col-sm w-25">
-                  <a href="https://www.linkedin.com/in/fexed/" class="list-group-item list-group-item-action"><img class="img-fluid" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"/></a>
-                </div>
-                <div class="col-sm w-25">
-                  <a href="https://www.facebook.com/fexed4" class="list-group-item list-group-item-action"><img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/512px-2021_Facebook_icon.svg.png"/></a>
-                </div>
-                <div class="col-sm w-25">
-                  <a href="https://www.instagram.com/fexed_/" class="list-group-item list-group-item-action"><img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"/></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- PROJECTS -->
-        <div class="flex-grow-1 align-content-center" style="max-width: 80rem;">
-          <div class="card text-center mt-3 mx-auto" >
-            <div class="card-header">
-              <h5 class="card-title">Projects and hobbies</h5>
-            </div>
-            <div class="card-body">
-              <ul class="list-group">
-                <a href="https://www.flickr.com/people/157105673@N08/" class="list-group-item list-group-item-action"><u>Flickr </u><small><img src="img/xef.png" class="float-right" style="width: 2rem;" alt="unipi logo"></small></a>
-                <a href="https://www.instagram.com/xef_photos/" class="list-group-item list-group-item-action"><u>Instagram <small><img src="img/xef.png" class="float-right" style="width: 2rem;" alt="unipi logo"></small></u></a>
-                <a href="https://fexed.gumroad.com/" class="list-group-item list-group-item-action"><u>Gumroad <small><img src="img/xef.png" class="float-right" style="width: 2rem;" alt="unipi logo"></small></u></a>
-              </ul>
-            </div>
-            <div class="card-body">
-              <ul class="list-group">
-                <a href="projects.html" class="list-group-item list-group-item-action"><u>Summary of my projects</u></a>
-                <a href="https://github.com/fexed/Notes/blob/master/README.md" class="list-group-item list-group-item-action"><u>Studying notes</u></a>
-                <a href="https://github.com/fexed?tab=repositories" class="list-group-item list-group-item-action"><u>GitHub repositories</u></a>
-                <a href="https://play.google.com/store/apps/dev?id=6687966458279653723" class="list-group-item list-group-item-action"><u>Play Store page</u></a>
-              </ul>
-            </div>
-            <div class="card-body">
-              <ul class="list-group">
-                <a href="https://www.youtube.com/channel/UCkFbRUtXTftgJ4Bj_KbsHiA" class="list-group-item list-group-item-action"><u>YouTube</u> <span class="badge bg-secondary">IT</span></a>
-                <a href="https://fexed.wordpress.com/" class="list-group-item list-group-item-action"><u>Soliloquio</u> <span class="badge bg-secondary">IT</span></a>
-                <a href="https://www.facebook.com/Curiosinfo" class="list-group-item list-group-item-action"><u>CuriosInfo</u> <span class="badge bg-secondary">IT</span></a>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div class="motion-control" id="motion-control" hidden>
+        <button class="motion-button" id="motion-button" type="button">Enable motion</button>
+        <span id="motion-status" aria-live="polite"></span>
       </div>
+    </main>
 
-      <div class="row row-cols-xxl-2 row-cols-lg-2d-flex justify-content-center">
-        <!-- GitHub -->
-        <div class="flex-grow-1 align-content-center" style="max-width: 60rem;">
-          <div class="card text-center mt-3 mx-auto" >
-            <img class="card-img-top mt-2 mb-2" src="https://ghchart.rshah.org/fexed" alt="fexed's Github chart"/>
-            <div class="card-footer">
-              <h6>GitHub activities, over the last year</h6>
-            </div>
-          </div>
-        </div>
-        <div class="flex-grow-1 align-content-center" style="max-width: 60rem;">
-          <div class="card text-center mt-3 mx-auto" >
-            <img class="card-img-top mt-2 mb-2" src="img/photos.png" alt="fexed's photos"/>
-            <div class="card-footer">
-              <h6>Photos</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- INFOS -->
-      <div class="row row-cols-auto justify-content-center">
-        <div class="flex-grow-1 align-content-center" style="max-width: 60rem;">
-          <div class="card py-3 mt-5">
-            <div class="card-body">
-              Original website created on <b>Sept. 16, 2014</b> on <a href="https://sites.google.com/view/fexed/home">Google Websites</a><br>
-              Most sources and downloads will be hosted on my personal Google
-              Drive or GitHub accounts, and the resources can be deleted and/or
-              edited as I please.<br>
-              Anyone is <b>free to use and edit</b> my works unless specified otherwise, the only requirements are
-              <b>attribution</b> and <b>non commercial</b> (as per <a href="https://creativecommons.org/licenses/by-nc/4.0/">cc by-nc 4.0</a>)
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- footer -->
-    <footer class="footer mt-auto py-3">
-      <div class="container">
-        <span class="text-muted">Powered by <a href="https://getbootstrap.com/">Bootstrap v5.3.2</a>, made by <b>Federico Matteoni</b></span>
-      </div>
+    <footer class="site-footer">
+      <span>Made under the night sky</span>
+      <span class="footer-coordinate" aria-hidden="true">43°50′ N&nbsp; 10°30′ E</span>
     </footer>
+    <script src="js/home.js" defer></script>
+    <script src="js/latest-update.js" defer></script>
   </body>
 </html>

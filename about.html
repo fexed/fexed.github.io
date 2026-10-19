@@ -1,116 +1,85 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="About Federico Matteoni">
-    <meta name="author" content="Federico Matteoni">
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Favicons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Meet Federico Matteoni: software engineer, curious explorer, and lifelong science enthusiast.">
+    <meta name="theme-color" content="#070b16">
     <link rel="icon" href="img/icon32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="img/icon16.png" sizes="16x16" type="image/png">
-
-    <!-- Theme -->
-    <meta name="theme-color" content="#004680">
-
+    <link rel="stylesheet" href="css/site.css">
     <title>fexed | About</title>
   </head>
-  <body class="d-flex flex-column">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- navbar -->
-    <div class="nav-scroller">
-      <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#"><img src="img/icon_w.png" width="30" height="30"> fexed</a>
-        <ul class = "navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.flickr.com/people/157105673@N08">Photos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://fexed.notion.site/d1f97c2f4f094c33954f26e4bd0d8f04?v=1ec2c14ee40d4f4e8c61f5031d108387&pvs=4">Notes</a>
-          </li>
-        </ul>
+  <body class="section-page">
+    <header class="section-header">
+      <a class="wordmark" href="index.html"><img src="img/icon_w.png" alt="" width="32" height="32"><span>fexed</span></a>
+      <nav class="section-nav" aria-label="Main navigation">
+        <a href="about.html" aria-current="page">About</a><a href="blog.html">Blog</a><a href="projects.html">Code</a><a href="photos.html">Photos</a><a href="others.html">Others</a>
       </nav>
-    </div>
-    <div class="mt-5">
+    </header>
 
-    <!-- main body -->
-    <div class="container mt-5">
-      <div class="row-cols-xxl-4 row-cols-lg-4d-flex">
-        
-        <div class="flex-grow-1 align-content-center mx-3">
-          <div class="card mx-1 my-1">
-            <div class="card-header">
-              <h4>About Me</h4>
-            </div>
-            <p class="card-body">
-              I was born on <a href="https://en.wikipedia.org/wiki/August_9">August 9th</a> <a href="https://en.wikipedia.org/wiki/1996">1996</a> in <a href="https://goo.gl/maps/43ncwKTcvs2JKY2U6"><b>Lucca, Italy</b></a>.<br>
-              I attended the <a href="https://en.wikipedia.org/wiki/Enrico_Fermi">E. Fermi</a> <a href="https://www.istitutofermi.it/">high school</a> in Lucca, and on October 8th 2021 I graduated in computer science at the <a href="https://www.unipi.it/"><b>University of Pisa</b></a>, where I currently attend the <a href="https://didattica.di.unipi.it/laurea-magistrale-in-informatica/curricula/curriculum-artificial-intelligence/">Master's Degree in Artificial Intelligence</a>.<br>
-              On June 2022 I begun working as a mobile software engineer at Garmin Italy Technologies SRL.<br><br>
-              Throughout my life I was always fascinated by science: <b>astronomy</b> and <b>computers</b> have really captured my heart and mind, but <b>every aspect of science still has a strong pull on me</b>.<br>
-              Every field that requires <b>imagination, inventiveness, ingenuity and reasoning</b> captures my attention. I like to delve into stuff, both in an abstract and concrete sense: I like exploring,
-              experimenting, discovering how things work and try to replicate, use or modify them.<br><br>
-              In my free time, among the other things, I like reading, taking photos, playing tabletop RPGs and videogames, and working on personal projects.
-            </p>
-          </div>
+    <main class="section-main about-main">
+      <section class="about-intro" aria-labelledby="about-title">
+        <p class="section-eyebrow">01 / PROFILE · LUCCA, ITALY</p>
+        <h1 id="about-title">Curious by nature.</h1>
+        <p class="about-lede">I'm Federico Matteoni: a software engineer drawn to astronomy, computers, and the joy of figuring out how things work.</p>
+        <p class="about-intro-detail">I like to explore ideas from both sides—understanding them in the abstract, then experimenting and building something with what I learn.</p>
+      </section>
+
+      <section class="about-path" aria-labelledby="about-path-title">
+        <div class="about-section-heading">
+          <p class="section-eyebrow">THE PATH SO FAR</p>
+          <h2 id="about-path-title">Learning, then making.</h2>
         </div>
-
-        <div class="flex-grow-1 align-content-center mx-3">
-          <div class="card mx-1 my-1" style="width: 15rem;">
-            <img src="img/photos/photography.jpg" class="card-img-top" alt="photography" >
-            <div class="card-footer">
-              <h4 class="card-title">Photography</h4>
+        <div class="about-path-grid">
+          <article class="about-path-card">
+            <span class="about-path-year">2021</span>
+            <div>
+              <h3>Computer science</h3>
+              <p>Graduated in computer science at the University of Pisa after attending E. Fermi high school in Lucca.</p>
             </div>
-          </div>
-        </div>
-        
-        <div class="flex-grow-1 align-content-center mx-3">
-          <div class="card mx-1 my-1" style="width: 15rem;">
-            <img src="img/photos/dnd.jpg" class="card-img-top" alt="dnd" >
-            <div class="card-footer">
-              <h4 class="card-title">D&D</h4>
+          </article>
+          <article class="about-path-card">
+            <span class="about-path-year">2022 →</span>
+            <div>
+              <h3>Mobile software</h3>
+              <p>Started working as a mobile software engineer at Garmin Italy Technologies, alongside further studies in artificial intelligence.</p>
             </div>
-          </div>
+          </article>
         </div>
+      </section>
 
-        <div class="flex-grow-1 align-content-center mx-3">
-          <div class="card mx-1 my-1" style="width: 15rem;">
-            <img src="img/photos/space.jpg" class="card-img-top" alt="astronomy" >
-            <div class="card-footer">
-              <h4 class="card-title">Astronomy</h4>
-            </div>
-          </div>
+      <section class="about-interests" aria-labelledby="about-interests-title">
+        <div class="about-section-heading">
+          <p class="section-eyebrow">BEYOND THE SCREEN</p>
+          <h2 id="about-interests-title">Things I keep coming back to.</h2>
+          <p>Different ways to explore, imagine, and make.</p>
         </div>
-
-        <div class="flex-grow-1 align-content-center mx-3">
-          <div class="card mx-1 my-1" style="width: 15rem;">
-            <img src="img/photos/rpi.jpg" class="card-img-top" alt="tinkering" >
-            <div class="card-footer">
-              <h4 class="card-title">Tinkering</h4>
-            </div>
-          </div>
+        <div class="about-interest-grid">
+          <article class="about-interest about-interest-photo">
+            <img src="img/photos/photography.jpg" alt="A moment from a photography session">
+            <div><h3>Photography</h3><p>Finding a story in light, people, and places.</p></div>
+          </article>
+          <article class="about-interest about-interest-space">
+            <img src="img/photos/space.jpg" alt="A view of space and the night sky">
+            <div><h3>Astronomy</h3><p>Looking up, asking questions, and exploring the cosmos.</p></div>
+          </article>
+          <article class="about-interest about-interest-dnd">
+            <img src="img/photos/dnd.jpg" alt="A tabletop role-playing game in progress">
+            <div><h3>Tabletop RPGs</h3><p>Shared worlds, improbable plans, and good stories.</p></div>
+          </article>
+          <article class="about-interest about-interest-making">
+            <img src="img/photos/rpi.jpg" alt="A Raspberry Pi project">
+            <div><h3>Tinkering</h3><p>Small experiments that turn curiosity into something real.</p></div>
+          </article>
         </div>
+      </section>
 
-      </div>
-    </div>
+      <nav class="about-links" aria-label="Explore more">
+        <a href="projects.html">Explore my projects <span aria-hidden="true">↗</span></a>
+        <a href="photos.html">Browse my photos <span aria-hidden="true">↗</span></a>
+      </nav>
+    </main>
 
-    <!-- footer -->
-    <footer class="footer mt-auto py-3">
-      <div class="container">
-        <span class="text-muted">Powered by <a href="https://getbootstrap.com/">Bootstrap v5.3.2</a>, made by <b>Federico Matteoni</b></span>
-      </div>
-    </footer>
+    <footer class="section-footer"><span>Federico Matteoni</span><span>01 / 05</span></footer>
   </body>
 </html>
