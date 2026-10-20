@@ -21,94 +21,13 @@
       <h1>Blog</h1>
       <p class="section-lede">Small dispatches from life, projects, and the things happening in between.</p>
       <p class="blog-longform">For longer writing, visit <a href="https://fexed.wordpress.com/">Soliloquio</a>.</p>
-      <div class="blog-updates-frame" role="region" aria-label="Chat-style updates" tabindex="0">
-        <section class="archive-year" aria-labelledby="blog-2026-title">
-          <h2 id="blog-2026-title">2026</h2>
-          <div id="blog-updates-2026" class="archive-content" aria-live="polite">Loading updates…</div>
-        </section>
-        <section class="archive-year" aria-labelledby="blog-2024-title">
-          <h2 id="blog-2024-title">2024</h2>
-          <div id="blog-updates-2024" class="archive-content" aria-live="polite">Loading updates…</div>
-        </section>
-        <section class="archive-year" aria-labelledby="blog-2023-title">
-          <h2 id="blog-2023-title">2023</h2>
-          <div id="blog-updates-2023" class="archive-content" aria-live="polite">Loading updates…</div>
-        </section>
-      </div>
+      <div id="blog-updates" class="blog-updates-frame" role="region" aria-label="Chat-style updates" aria-live="polite" tabindex="0">Loading updates…</div>
     </main>
     <dialog class="blog-image-dialog" aria-label="Enlarged update photo">
       <form method="dialog"><button class="blog-image-close" aria-label="Close enlarged photo">Close <span aria-hidden="true">×</span></button></form>
       <img alt="">
     </dialog>
     <footer class="section-footer"><span>Federico Matteoni</span><span>02 / 05</span></footer>
-    <script>
-      const imageDialog = document.querySelector(".blog-image-dialog");
-      const enlargedImage = imageDialog.querySelector("img");
-
-      function arrangeUpdateImages(container) {
-        for (const bubble of container.querySelectorAll(".d-flex.flex-row > div")) {
-          const mediaNodes = new Set();
-          for (const image of bubble.querySelectorAll("img")) {
-            const link = image.closest("a");
-            mediaNodes.add(link && link.parentElement === bubble ? link : image);
-          }
-          if (!mediaNodes.size) continue;
-
-          const copy = document.createElement("div");
-          copy.className = "blog-message-copy";
-          const media = document.createElement("div");
-          media.className = "blog-message-media";
-          for (const child of Array.from(bubble.childNodes)) {
-            if (mediaNodes.has(child)) {
-              const image = child.matches("img") ? child : child.querySelector("img");
-              let link = child;
-              if (image === child) {
-                link = document.createElement("a");
-                link.href = image.src;
-                link.append(image);
-              }
-              link.classList.add("blog-image-link");
-              link.dataset.zoomSrc = image.src;
-              if (!image.alt || image.alt === "...") image.alt = "Update photo";
-              media.append(link);
-            } else if (!(child.nodeType === Node.ELEMENT_NODE && child.tagName === "BR")) {
-              copy.append(child);
-            }
-          }
-          bubble.classList.add("has-blog-media");
-          bubble.replaceChildren(copy, media);
-        }
-      }
-
-      document.querySelector(".blog-updates-frame").addEventListener("click", (event) => {
-        const link = event.target.closest(".blog-image-link");
-        if (!link) return;
-        event.preventDefault();
-        enlargedImage.src = link.dataset.zoomSrc;
-        enlargedImage.alt = link.querySelector("img").alt;
-        imageDialog.showModal();
-      });
-
-      imageDialog.addEventListener("click", (event) => {
-        if (event.target === imageDialog) imageDialog.close();
-      });
-
-      for (const year of ["2026", "2024", "2023"]) {
-        const target = document.getElementById(`blog-updates-${year}`);
-        fetch(`updates/${year}.html`)
-          .then((response) => {
-            if (!response.ok) throw new Error(`Could not load the ${year} updates (${response.status}).`);
-            return response.text();
-          })
-          .then((markup) => {
-            target.innerHTML = markup;
-            arrangeUpdateImages(target);
-            target.removeAttribute("aria-live");
-          })
-          .catch((error) => {
-            target.textContent = error.message;
-          });
-      }
-    </script>
+    <script src="js/updates.js?v=2" defer></script>
   </body>
 </html>

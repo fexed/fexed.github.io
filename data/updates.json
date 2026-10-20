@@ -1,0 +1,354 @@
+{
+  "updates": [
+    {
+      "date": "2026-10-20",
+      "dateLabel": "October 20, 2026",
+      "avatar": "img/photos/chat/5_propic.jpg",
+      "avatarAlt": "Federico Matteoni",
+      "messageHtml": "<p class=\"small mb-0\">Held a demo today at work, and it went really well! Future feature of the Boating app, can't say much more</p>"
+    },
+    {
+      "date": "2026-10-19",
+      "dateLabel": "October 19, 2026",
+      "avatar": "img/photos/chat/5_propic.jpg",
+      "avatarAlt": "Federico Matteoni",
+      "messageHtml": "<p class=\"small mb-0\">Reworked my website! I plan on thinking more about my digital fooprint from now on. Let's see!</p>"
+    },
+    {
+      "date": "2024-09-06",
+      "dateLabel": "Sept. 06, 2024",
+      "avatar": "img/photos/chat/4_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">As you can imagine, buying a house and moving out took a big bite out of my free time. I officially moved during last month, but my apartment is slowly taking shape. The next months will be mostly focused on three things: setting up my home-office, working on a project for a friend (Inconscio) and getting back on track with university work.</p>"
+    },
+    {
+      "date": "2024-03-30",
+      "dateLabel": "March 30, 2024",
+      "avatar": "img/photos/chat/3_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Still working! Got involved in some projects at work that took most of my energies. In my free time, I've been studying... and looking for a new home. More on that soon, hopefully.</p>"
+    },
+    {
+      "date": "2024-02-10",
+      "dateLabel": "February 10, 2024",
+      "avatar": "img/photos/chat/3_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">During the last few days I've updated some apps on the Play Store: Wear Countdown, Exoplanets Explorer and Radar Hunt. Mostly I've updated some libraries, but I also took time to implement few ideas. <a href=\"https://play.google.com/store/apps/dev?id=6687966458279653723\">Go check them out!</a></p>"
+    },
+    {
+      "date": "2024-01-25",
+      "dateLabel": "January 25, 2024",
+      "avatar": "img/photos/chat/3_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">I bought some upgrades for my main PC: 64 GB of RAM and a nVidia RTX 4070 super. Let's see what comes out of it!</p>"
+    },
+    {
+      "date": "2024-01-13",
+      "dateLabel": "January 13, 2024",
+      "avatar": "img/photos/chat/3_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">I 3D printed the corrupted Master Sword from The Legend of Zelda Tears of the Kingdom! I posted a make on <a href=\"https://www.thingiverse.com/make:1149167\">Thingiverse</a>.</p>\n            <br>\n            <a href=\"img/photos/chat/12.jpg\"><img src=\"img/photos/chat/12.jpg\" class=\"card-img\" alt=\"...\"></a>"
+    },
+    {
+      "date": "2024-01-01",
+      "dateLabel": "January 1, 2024",
+      "avatar": "img/photos/chat/3_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Another year brings many new projects.</p>"
+    },
+    {
+      "date": "2023-12-21",
+      "dateLabel": "December 21, 2023",
+      "avatar": "img/photos/chat/3_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">I got a Steam Deck OLED! It's really comfortable.</p>"
+    },
+    {
+      "date": "2023-12-10",
+      "dateLabel": "December 10, 2023",
+      "avatar": "img/photos/chat/3_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">As the year comes to a close, I am reevaluating the scope of some of my projects. Given the recent changes with Google's Play Store policy, I think I will be dialing down personal app development a bit. Maybe I will take that time to focus on more ML-oriented project and explore a bit of Reinforcemenet Learning applications.</p>"
+    },
+    {
+      "date": "2023-12-10",
+      "dateLabel": "December 10, 2023",
+      "avatar": "img/photos/chat/3_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">In the meantime I got a new 3D printer: an Artillery Sidewinder X2. I already started designing and printing some small tokens as Christmas gifts!</p>"
+    },
+    {
+      "date": "2023-11-28",
+      "dateLabel": "November 28, 2023",
+      "avatar": "img/photos/chat/3_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">I've begun offering some photo packs on Gumroad. I'll offer mostly photo packs that cannot be published on Instagram, such as NSFW ones, and split every income with the models.<br><a href=\"https://fexed.gumroad.com\">Check it out</a>!</p>"
+    },
+    {
+      "date": "2023-11-16",
+      "dateLabel": "November 16, 2023",
+      "avatar": "img/photos/chat/3_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Lately I've resume studying, so many of my projects are progressing slower than usual.</p>"
+    },
+    {
+      "date": "2023-10-29",
+      "dateLabel": "October 29, 2023",
+      "avatar": "img/photos/chat/2_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Today we shot the last photos just before Lucca Comics. We took some really nice pictures, check those out on my <a href=\"https://www.flickr.com/photos/157105673@N08/\">Flickr</a>!</p>\n            <br>\n            <a href=\"https://www.flickr.com/photos/157105673@N08/53296307719/in/datetaken-public/\"><img src=\"img/photos/chat/11.jpg\" class=\"card-img\" alt=\"...\"></a>"
+    },
+    {
+      "date": "2023-10-28",
+      "dateLabel": "October 28, 2023",
+      "avatar": "img/photos/chat/2_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">I am beginning to understand Godot a bit better. Thanks to the amazing official tutorial, I made yesterday's minigame in 3D!</p>\n            <br>\n            <a href=\"img/photos/chat/10.jpg\"><img src=\"img/photos/chat/10.jpg\" class=\"card-img\" alt=\"...\"></a>"
+    },
+    {
+      "date": "2023-10-27",
+      "dateLabel": "October 27, 2023",
+      "avatar": "img/photos/chat/2_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">I begun toying around with Godot and made a very simple 2D game. Very fun!</p>\n            <br>\n            <a href=\"img/photos/chat/9.jpg\"><img src=\"img/photos/chat/9.jpg\" class=\"card-img\" alt=\"...\"></a>"
+    },
+    {
+      "date": "2023-10-19",
+      "dateLabel": "October 19, 2023",
+      "avatar": "img/photos/chat/2_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Today me and Raffaello held a small workshop at Politecnico di Milano on image comparison with OpenCV, and how to leverage it to perform effective preprocessing for machine learning applications.<br>Not everything went according to plan, but everything was good in the end!</p>\n            <br>\n            <a href=\"img/photos/chat/8_img.jpg\"><img src=\"img/photos/chat/8_img.jpg\" class=\"card-img\" alt=\"...\"></a>"
+    },
+    {
+      "date": "2023-10-08",
+      "dateLabel": "October 8, 2023",
+      "avatar": "img/photos/chat/2_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Just released a small update for Pinball on Android, <a href=\"https://github.com/fexed/Pinball-on-Android/releases/tag/2.5\">check it out</a>!<br>\n              </p>"
+    },
+    {
+      "date": "2023-09-27",
+      "dateLabel": "September 27, 2023",
+      "avatar": "img/photos/chat/2_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Just got a Flipper Zero! If my name appears on newspapers, that's not me.<br>\n              </p>"
+    },
+    {
+      "date": "2023-09-23",
+      "dateLabel": "September 23, 2023",
+      "avatar": "img/photos/chat/2_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">This month is not over yet, and I already shot 2.7k photos! So, as you can imagine, photography as taken a bit more of my time in the past weeks, as Astrid came back from Australia and we had to recover 2 years of photosets 😁<br>\n              NuzlockOne has been under review, but I still am not satisfied with the result. I'll probably remake the app from scratch in the upcoming weeks. Also, Wear Countdown was taken down from the Play Store due to the new policies implemented by Google for Wear OS apps quality. Been working on that too.<br>\n              </p>"
+    },
+    {
+      "date": "2023-08-27",
+      "dateLabel": "August 27, 2023",
+      "avatar": "img/photos/chat/2_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">I begun working on a new multiplatform app recently, to help with Pokémon Nuzlocke runs. Will soon be posting some updates about it! In the meantime you can get insights about\n                my projects and development process on my <a href=\"https://t.me/fexeddev\">Telegram channel</a>.</p>\n                <br>\n                <a href=\"img/photos/chat/7_img.jpg\"><img src=\"img/photos/chat/7_img.jpg\" class=\"card-img\" alt=\"...\"></a>"
+    },
+    {
+      "date": "2023-08-17",
+      "dateLabel": "August 17, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">I published a video timelapse of the Marin Kitagawa photoset on YouTube, <a href=\"https://youtu.be/LZzEM9Fq85w\">check it out</a>!</p>"
+    },
+    {
+      "date": "2023-08-17",
+      "dateLabel": "August 17, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Also, today I got the Pixel 7 Pro and took some time to shoot some photos with it at a RG EVA-01 that my amazing friends gifted me for my birthday!</p>\n              <br>\n              <a href=\"img/photos/chat/6_img.jpg\"><img src=\"img/photos/chat/6_img.jpg\" class=\"card-img\" alt=\"...\"></a>"
+    },
+    {
+      "date": "2023-08-17",
+      "dateLabel": "August 17, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">And, after a couple weeks or so of stepping away from code, lately I got back with my hands on my keyboard. Got back to work and I'm already designing my next app!</p>"
+    },
+    {
+      "date": "2023-08-03",
+      "dateLabel": "August 3, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">The result of my biggest photography project so far is here! <a href=\"https://www.instagram.com/p/CvfYhxjoGcZ/\">Go check it out on Instagram</a>!</p>"
+    },
+    {
+      "date": "2023-08-01",
+      "dateLabel": "August 1, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">After a 10 hour long shooting session, today me and <a href=\"https://www.instagram.com/ciocoreto/\">Ciocoreto</a> realised an idea we had for a long time. Stay tuned!</p><br>\n                <a href=\"img/photos/chat/5_img.jpg\"><img src=\"img/photos/chat/5_img.jpg\" class=\"card-img\" alt=\"...\"></a>"
+    },
+    {
+      "date": "2023-06-21",
+      "dateLabel": "June 21, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Just submitted a project for the Parallel Systems course, where I implemented a parallel version of the Huffman Coding algorithm.<br>\n                It was a very fun project, although I didn't have much time to dedicate to it lately. Will post it on GitHub as soon as the exam will be archived.</p>"
+    },
+    {
+      "date": "2023-06-21",
+      "dateLabel": "June 21, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Also, starting from July 1st I'll be promoted to Software Engineer II in Garmin Italy Technologies! 😁</p>"
+    },
+    {
+      "date": "2023-06-15",
+      "dateLabel": "June 15, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\"><span class=\"badge bg-secondary\">IT</span> Ho pubblicato un video a cui lavoro da un po'. Non ne sono pienamente soddisfatto, ma è un grosso esperimento.\n                Parlo di Earthrise, una fotografia scattata durante l'Apollo 8, e accenno a com'era il mondo alla fine del 1968: quando l'uomo raggiunse per la prima volta la Luna finendo per riscoprire la Terra.<br>\n              Lo trovate su <a href=\"https://youtu.be/86dTgtcS5as\">YouTube</a>!</p>"
+    },
+    {
+      "date": "2023-06-08",
+      "dateLabel": "June 8, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Yesterday I read a couple of notes by <a href=\"https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C\">Andy Matuschak</a> and it inspired me in a better approch to note-taking and organizing my thoughts.\n                Following the idea of <a href=\"https://notes.andymatuschak.org/z21cgR9K3UcQ5a7yPsj2RUim3oM2TzdBByZu\">working with the garage door open</a> I decided to begun better organizing and publishing what I think and write.<br>\n              So yeah, although I will just be publishing Evergreen Notes, and some of them may become blog posts, <a href=\"https://fexed.notion.site/d1f97c2f4f094c33954f26e4bd0d8f04?v=1ec2c14ee40d4f4e8c61f5031d108387&amp;pvs=4\">here there are</a>, written in full English so I can practice it a bit.<br>\n              You can find the link in the top bar of my website.</p>"
+    },
+    {
+      "date": "2023-06-06",
+      "dateLabel": "June 6, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Just finished Tears of the Kingdom. Above all expectations, really an amazing game. I put together a small video to summarize my experience through in-game clips, <a href=\"https://youtu.be/Y5NnHSHoTHo\">check it out</a>.</p>"
+    },
+    {
+      "date": "2023-06-05",
+      "dateLabel": "June 5, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Apple's #WWDC23 presentation just ended. All great stuff but the Vision Pro really sticked with me: looks a lot like the <a href=\"https://www.theverge.com/2023/6/4/23747110/apple-headset-augmented-reality-vr-industry-rumors-wwdc-2023\">\"iPhone moment\" I read on The Verge</a> today.\n              From the sensors to the interaction, everything looks on point. But the price tag, 3499$, really puts it above most people wallets, and that'll mean a really slow adoption process. We'll see, but I am positive.</p>"
+    },
+    {
+      "date": "2023-05-23",
+      "dateLabel": "May 23, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Last month has been very busy. Lots of photos and lots of studying, but also Tears of the Kingdom came out so I've been playing a lot lol</p>"
+    },
+    {
+      "date": "2023-05-23",
+      "dateLabel": "May 23, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">I also put some seriously stupid code inside the Navionics' Boating app and crashed 10k sessions in a week. So yeah. Still thinking about that.</p>"
+    },
+    {
+      "date": "2023-04-30",
+      "dateLabel": "Apr. 30, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">I basically restarted from scratch working on L'Urlo della Colomba. It's fun but it is very time consuming, and RPG Maker is not exactly programmer-friendly.</p>"
+    },
+    {
+      "date": "2023-04-22",
+      "dateLabel": "Apr. 22, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Happy Earth Day everyone! We live on a marvelous planet, let's keep it that way.</p>"
+    },
+    {
+      "date": "2023-04-21",
+      "dateLabel": "Apr. 21, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Wear Countdown is now at version 1.2, with a new feature: watchface complications! <a href=\"https://play.google.com/store/apps/details?id=com.fexed.wearcountdown\">Download it now</a>!</p>"
+    },
+    {
+      "date": "2023-04-13",
+      "dateLabel": "Apr. 13, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Just released version 1.1 of my Wear Countdown app, with some fixes behind the scenes and reworked colours. <a href=\"https://play.google.com/store/apps/details?id=com.fexed.wearcountdown\">Check it out</a>!</p>"
+    },
+    {
+      "date": "2023-04-07",
+      "dateLabel": "Apr. 7, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">For Andrea's birthday, one of my dearest friends, we shot a video just to laugh a bit together. He is living in France, so we shot a video of us \"reaching\" him, without actually showing him on screen. It was very funny! You can watch it <a href=\"https://youtu.be/BWVwiS-wcvY\">here</a> (it's in italian, but there not much dialogue).</p>"
+    },
+    {
+      "date": "2023-04-01",
+      "dateLabel": "Apr. 1, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Last couple of weeks I worked on some projects behind the scenes, and got back to studying for some university exams. Just a quick spoiler: I'm (slowly) working to bring Pinball on iOS! You can see a glimpse on my <a href=\"https://t.me/fexeddev/67\">Telegram channel</a>.</p>"
+    },
+    {
+      "date": "2023-03-14",
+      "dateLabel": "Mar. 14, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Just pushed v2.4 of Pinball-on-Android, this time with music and fixes to crashes and leaderboard! As always, available on <a href=\"https://github.com/fexed/Pinball-on-Android/releases/tag/2.4\">GitHub</a>!</p>"
+    },
+    {
+      "date": "2023-03-09",
+      "dateLabel": "Mar. 9, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">A <a href=\"https://youtu.be/BdMheMmmHiU\">musical video</a> me and my friend <a href=\"https://www.youtube.com/@EmaTLKH\">Emanuele</a> made just got retweeted by the original composer <a href=\"https://twitter.com/christophertin/status/1633890637992067072\">Christopher Tin</a>!</p>"
+    },
+    {
+      "date": "2023-03-04",
+      "dateLabel": "Mar. 4, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">My <a href=\"https://github.com/fexed/Pinball-on-Android\">Pinball-on-Android</a> repo just reached 500 stars! I feel overwhelmed lol</p>\n              <br>\n              <img src=\"img/photos/chat/2_img.jpg\" class=\"card-img\" alt=\"...\">"
+    },
+    {
+      "date": "2023-03-02",
+      "dateLabel": "Mar. 2, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">I have pushed some improvements to Pinball on Android and updated it to version 2.3, <a href=\"https://github.com/fexed/Pinball-on-Android/releases/tag/2.3\">download it here</a>!</p>"
+    },
+    {
+      "date": "2023-02-26",
+      "dateLabel": "Feb. 26, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Wear Countdown is going live on <a href=\"https://play.google.com/store/apps/details?id=com.fexed.wearcountdown\">Google Play</a> soon!</p>"
+    },
+    {
+      "date": "2023-02-25",
+      "dateLabel": "Feb. 25, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">I didn't find any countdown app for my Wear OS smartwatch that I liked... so I begun building one myself. It's still a WIP, but <a href=\"https://github.com/fexed/WearCountdown\">check it out</a>!</p>"
+    },
+    {
+      "date": "2023-02-24",
+      "dateLabel": "Feb. 24, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">I just remade my <a href=\"https://www.flickr.com/people/157105673@N08/\">Flickr account</a>, go check it out!</p>"
+    },
+    {
+      "date": "2023-02-22",
+      "dateLabel": "Feb. 22, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Today the version 18.2 of the Boating app has been released, with my very first publicly available feature in it: I reworked the weather module with the Garmin's internal provider.</p>"
+    },
+    {
+      "date": "2023-02-21",
+      "dateLabel": "Feb. 21, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">Just posted a video about repairing the drone: <a href=\"https://youtu.be/I8QnTbts_m0\">check it out</a>!</p>"
+    },
+    {
+      "date": "2023-02-21",
+      "dateLabel": "Feb. 21, 2023",
+      "avatar": "img/photos/chat/1_propic.png",
+      "avatarAlt": "avatar 1",
+      "messageHtml": "<p class=\"small mb-0\">I just repaired my drone's arm! I broke it few weeks ago. The repair was fun and not so complicated, can't wait to fly again.</p>\n              <br>\n              <a href=\"img/photos/chat/1_img.jpg\"><img src=\"img/photos/chat/1_img.jpg\" class=\"card-img\" alt=\"...\"></a>"
+    }
+  ]
+}

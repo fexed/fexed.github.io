@@ -20,37 +20,10 @@
       <p class="section-eyebrow">02 / JOURNAL</p>
       <h1>Updates</h1>
       <p class="section-lede">Short notes from life, projects, and things worth remembering.</p>
-      <section class="archive-year" aria-labelledby="updates-2026-title">
-        <h2 id="updates-2026-title">2026</h2>
-        <div id="updates-2026" class="archive-content" aria-live="polite">Loading updates…</div>
-      </section>
-      <section class="archive-year" aria-labelledby="updates-2024-title">
-        <h2 id="updates-2024-title">2024</h2>
-        <div id="updates-2024" class="archive-content" aria-live="polite">Loading updates…</div>
-      </section>
-      <section class="archive-year" aria-labelledby="updates-2023-title">
-        <h2 id="updates-2023-title">2023</h2>
-        <div id="updates-2023" class="archive-content" aria-live="polite">Loading updates…</div>
-      </section>
+      <div id="updates-archive" class="updates-archive" aria-live="polite">Loading updates…</div>
       <a class="section-back" href="blog.html">← Back to Blog</a>
     </main>
     <footer class="section-footer"><span>Federico Matteoni</span><span>02 / 05</span></footer>
-    <script>
-      for (const year of ["2026", "2024", "2023"]) {
-        const target = document.getElementById(`updates-${year}`);
-        fetch(`updates/${year}.html`)
-          .then((response) => {
-            if (!response.ok) throw new Error(`Could not load the ${year} archive (${response.status}).`);
-            return response.text();
-          })
-          .then((markup) => {
-            target.innerHTML = markup;
-            target.removeAttribute("aria-live");
-          })
-          .catch((error) => {
-            target.textContent = error.message;
-          });
-      }
-    </script>
+    <script src="js/updates.js?v=2" defer></script>
   </body>
 </html>
