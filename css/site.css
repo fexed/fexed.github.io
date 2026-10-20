@@ -97,6 +97,10 @@ body.home {
   text-transform: uppercase;
 }
 
+.site-updated:not(:empty)::before {
+  content: " · ";
+}
+
 .home-main {
   display: flex;
   flex: 1;
@@ -357,6 +361,10 @@ body.home {
 
 .site-footer {
   min-height: 62px;
+}
+
+.site-footer > span:first-child {
+  min-width: 0;
 }
 
 body.section-page {
