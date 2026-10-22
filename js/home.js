@@ -136,10 +136,7 @@
     baseContext.beginPath();
     baseContext.arc(size / 2, size / 2, size * 0.49, 0, Math.PI * 2);
     baseContext.clip();
-    const cropSize = Math.min(moonImage.naturalWidth, moonImage.naturalHeight) / 2;
-    const sourceX = (moonImage.naturalWidth - cropSize) / 2;
-    const sourceY = (moonImage.naturalHeight - cropSize) / 2 - cropSize * 0.05;
-    baseContext.drawImage(moonImage, sourceX, sourceY, cropSize, cropSize, 0, 0, size, size);
+    baseContext.drawImage(moonImage, 0, 0, size, size);
     baseContext.restore();
 
     const image = baseContext.getImageData(0, 0, size, size);
@@ -154,10 +151,11 @@
         if (distance > 1) continue;
         const nz = Math.sqrt(1 - distance);
         const light = Math.max(0, Math.sin(angle) * nx - Math.cos(angle) * nz);
-        const brightness = 0.055 + 0.945 * Math.pow(light, 0.72);
-        image.data[index] *= brightness;
-        image.data[index + 1] *= brightness;
-        image.data[index + 2] *= brightness;
+        const limbLift = Math.min(1, Math.max(0, (distance - 0.9) / 0.08)) * 0.18;
+        const brightness = Math.min(1, 0.08 + 0.92 * Math.pow(light, 0.72) + limbLift);
+        image.data[index] = Math.min(255, image.data[index] * brightness * 1.2);
+        image.data[index + 1] = Math.min(255, image.data[index + 1] * brightness * 1.2);
+        image.data[index + 2] = Math.min(255, image.data[index + 2] * brightness * 1.2);
       }
     }
 
@@ -168,5 +166,5 @@
     moonContext.clearRect(0, 0, moonCanvas.width, moonCanvas.height);
     moonContext.drawImage(baseCanvas, 0, 0, moonCanvas.width, moonCanvas.height);
   });
-  moonImage.src = "img/photos/portfolio/themes/astrophotography/20110914_moon.png";
+  moonImage.src = "img/photos/portfolio/themes/astrophotography/52709077166_moon.png";
 })();

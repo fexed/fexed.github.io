@@ -284,6 +284,16 @@ body.home {
   margin: 0;
 }
 
+.moon-link {
+  display: block;
+  border-radius: 50%;
+}
+
+.moon-link:focus-visible {
+  outline: 2px solid rgba(199, 212, 243, 0.8);
+  outline-offset: 5px;
+}
+
 .moon-halo {
   width: clamp(190px, 28vw, 290px);
   aspect-ratio: 1;
