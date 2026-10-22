@@ -392,37 +392,6 @@ body.home {
   left: 8%;
 }
 
-.motion-control {
-  position: absolute;
-  right: 24px;
-  bottom: 18px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--muted);
-  font-size: 0.72rem;
-}
-
-.motion-control[hidden] {
-  display: none;
-}
-
-.motion-button {
-  border: 1px solid rgba(199, 212, 243, 0.28);
-  border-radius: 999px;
-  padding: 8px 13px;
-  background: rgba(9, 15, 29, 0.72);
-  color: #e7ecf7;
-  font: inherit;
-  cursor: pointer;
-}
-
-.motion-button:hover,
-.motion-button:focus-visible {
-  border-color: rgba(199, 212, 243, 0.64);
-  outline: none;
-}
-
 .site-footer {
   min-height: 62px;
 }
@@ -1727,12 +1696,6 @@ body.legacy-page {
 
   .link-others {
     grid-column: 1 / -1;
-  }
-
-  .motion-control {
-    position: static;
-    margin-top: 24px;
-    justify-content: center;
   }
 
   .site-footer {

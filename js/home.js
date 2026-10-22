@@ -3,9 +3,6 @@
   const moonCanvas = document.getElementById("moon");
   const phaseLabel = document.getElementById("moon-phase");
   const dateLabel = document.getElementById("moon-date");
-  const motionControl = document.getElementById("motion-control");
-  const motionButton = document.getElementById("motion-button");
-  const motionStatus = document.getElementById("motion-status");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
   if (!(starCanvas instanceof HTMLCanvasElement) || !(moonCanvas instanceof HTMLCanvasElement)) {
@@ -21,8 +18,6 @@
   let width = 0;
   let height = 0;
   let stars = [];
-  let pointer = { x: 0, y: 0 };
-  let offset = { x: 0, y: 0 };
   let animationFrame = 0;
 
   function randomGenerator(seed) {
@@ -49,17 +44,27 @@
       radius: 0.35 + random() * 1.05,
       alpha: 0.22 + random() * 0.62,
       tint: random() > 0.82 ? "#b9ccff" : "#f1f4ff",
+      phase: random() * Math.PI * 2,
+      speed: 0.08 + random() * 0.12,
+      driftX: 2 + random() * 4,
+      driftY: 2 + random() * 4,
+      twinklePhase: random() * Math.PI * 2,
+      twinkleSpeed: 0.45 + random() * 0.75,
+      twinkleAmount: 0.16 + random() * 0.2,
     }));
-    drawStarfield();
+    drawStarfield(performance.now());
   }
 
-  function drawStarfield() {
+  function drawStarfield(time) {
     if (!starContext) return;
     starContext.clearRect(0, 0, width, height);
     for (const star of stars) {
-      const x = (star.x + offset.x * star.radius * 2 + width) % width;
-      const y = (star.y + offset.y * star.radius * 2 + height) % height;
-      starContext.globalAlpha = star.alpha;
+      const depth = 0.55 + star.radius * 0.7;
+      const elapsed = time / 1000 * star.speed + star.phase;
+      const x = star.x + Math.sin(elapsed) * star.driftX * depth;
+      const y = star.y + Math.cos(elapsed * 0.83) * star.driftY * depth;
+      const twinkle = Math.sin(time / 1000 * star.twinkleSpeed + star.twinklePhase);
+      starContext.globalAlpha = star.alpha * (1 + twinkle * star.twinkleAmount);
       starContext.fillStyle = star.tint;
       starContext.beginPath();
       starContext.arc(x, y, star.radius, 0, Math.PI * 2);
@@ -68,75 +73,28 @@
     starContext.globalAlpha = 1;
   }
 
-  function animate() {
+  function animate(time) {
     if (reducedMotion.matches) {
-      offset = { x: 0, y: 0 };
-      drawStarfield();
+      drawStarfield(0);
       animationFrame = 0;
       return;
     }
-    offset.x += (pointer.x - offset.x) * 0.035;
-    offset.y += (pointer.y - offset.y) * 0.035;
-    drawStarfield();
+    drawStarfield(time);
     animationFrame = window.requestAnimationFrame(animate);
   }
 
   function startAnimation() {
     if (animationFrame) window.cancelAnimationFrame(animationFrame);
     animationFrame = 0;
-    if (!reducedMotion.matches) animationFrame = window.requestAnimationFrame(animate);
-    else drawStarfield();
+    if (reducedMotion.matches || document.hidden) drawStarfield(0);
+    else animationFrame = window.requestAnimationFrame(animate);
   }
 
-  window.addEventListener("pointermove", (event) => {
-    if (event.pointerType !== "mouse" || reducedMotion.matches) return;
-    pointer = {
-      x: ((event.clientX / width) - 0.5) * 2,
-      y: ((event.clientY / height) - 0.5) * 2,
-    };
-    if (!animationFrame) startAnimation();
-  }, { passive: true });
-
-  window.addEventListener("pointerleave", () => {
-    pointer = { x: 0, y: 0 };
-  });
   window.addEventListener("resize", resizeStarfield, { passive: true });
   reducedMotion.addEventListener("change", startAnimation);
+  document.addEventListener("visibilitychange", startAnimation);
   resizeStarfield();
   startAnimation();
-
-  const orientationAvailable =
-    window.matchMedia("(pointer: coarse)").matches && "DeviceOrientationEvent" in window;
-  if (orientationAvailable && motionControl && motionButton && motionStatus) {
-    motionControl.hidden = false;
-
-    window.addEventListener("deviceorientation", (event) => {
-      if (reducedMotion.matches || event.beta === null || event.gamma === null) return;
-      pointer = {
-        x: Math.max(-1, Math.min(1, event.gamma / 35)),
-        y: Math.max(-1, Math.min(1, event.beta / 45)),
-      };
-      if (!animationFrame) startAnimation();
-    }, { passive: true });
-
-    motionButton.addEventListener("click", async () => {
-      const orientationEvent = window.DeviceOrientationEvent;
-      if (typeof orientationEvent.requestPermission === "function") {
-        try {
-          const permission = await orientationEvent.requestPermission();
-          if (permission !== "granted") {
-            motionStatus.textContent = "Motion permission was not granted.";
-            return;
-          }
-        } catch (error) {
-          motionStatus.textContent = "Motion could not be enabled on this device.";
-          return;
-        }
-      }
-      motionButton.hidden = true;
-      motionStatus.textContent = "Move your device to explore.";
-    });
-  }
 
   const lunarMonth = 29.530588853;
   const knownNewMoon = Date.UTC(2000, 0, 6, 18, 14);
