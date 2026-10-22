@@ -51,7 +51,7 @@ body.home {
   z-index: -2;
   background:
     linear-gradient(180deg, rgba(5, 8, 18, 0.73), rgba(7, 11, 22, 0.85)),
-    url("../img/photos/portfolio/themes/astrophotography/20200503_startrails.png") center 46% / cover,
+    url("../img/photos/portfolio/themes/astrophotography/52707795587_startrails.jpg") center 46% / cover,
     #070b16;
   transform: scale(1.04);
 }
@@ -414,7 +414,7 @@ body.section-page {
   min-height: 100vh;
   background:
     linear-gradient(rgba(7, 11, 22, 0.85), rgba(7, 11, 22, 0.94)),
-    url("../img/photos/portfolio/themes/astrophotography/20200503_startrails.png") center / cover fixed,
+    url("../img/photos/portfolio/themes/astrophotography/52707795587_startrails.jpg") center / cover fixed,
     #070b16;
 }
 
@@ -422,7 +422,7 @@ body.legacy-page {
   min-height: 100vh;
   background:
     linear-gradient(rgba(7, 11, 22, 0.84), rgba(7, 11, 22, 0.94)),
-    url("../img/photos/portfolio/themes/astrophotography/20200503_startrails.png") center / cover fixed,
+    url("../img/photos/portfolio/themes/astrophotography/52707795587_startrails.jpg") center / cover fixed,
     #070b16;
   color: #f1f3f8;
 }
