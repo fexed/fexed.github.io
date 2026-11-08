@@ -146,6 +146,25 @@ body.home {
   letter-spacing: 0.01em;
 }
 
+.cv-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #c2cce2;
+  font-size: 0.8rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cv-link:hover,
+.cv-link:focus-visible {
+  color: #fff;
+}
+
+.cv-link:focus-visible {
+  outline: 2px solid #c2cce2;
+  outline-offset: 4px;
+}
+
 .latest-update {
   display: flex;
   align-items: flex-start;
