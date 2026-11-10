@@ -550,7 +550,7 @@ body.legacy-page {
   color: #a2abc0 !important;
 }
 
-.legacy-page a:not(.navbar-brand):not(.nav-link):not(.card):not(.list-group-item) {
+.legacy-page a:not(.navbar-brand):not(.nav-link):not(.card):not(.list-group-item):not(.wordmark):not(.section-nav a) {
   color: #c5d6ff;
   text-underline-offset: 3px;
 }
@@ -1183,6 +1183,11 @@ body.legacy-page {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid rgba(195, 208, 238, 0.12);
+}
+
+.legacy-page .section-header {
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  line-height: normal;
 }
 
 .section-nav {
