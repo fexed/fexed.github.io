@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "date": "2026-11-11",
+      "dateLabel": "November 11, 2026",
+      "avatar": "img/photos/chat/5_propic.jpg",
+      "avatarAlt": "Federico Matteoni",
+      "messageHtml": "<p class=\"small mb-0\">Working on a bunch of stuff at the same time it's fun. Feels good to be back creating.</p>"
+    },
+    {
       "date": "2026-10-20",
       "dateLabel": "October 20, 2026",
       "avatar": "img/photos/chat/5_propic.jpg",
