@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "date": "2026-11-13",
+      "dateLabel": "November 13, 2026",
+      "avatar": "img/photos/chat/5_propic.jpg",
+      "avatarAlt": "Federico Matteoni",
+      "messageHtml": "<p class=\"small mb-0\">Tickfolio has been released! It was a nice experiment, I'm really satisfied. Find it <a href=\"https://play.google.com/store/apps/details?id=com.fexed.checklist\">here</a></p>"
+    },
+    {
       "date": "2026-11-11",
       "dateLabel": "November 11, 2026",
       "avatar": "img/photos/chat/5_propic.jpg",

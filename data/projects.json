@@ -9,9 +9,14 @@
       "description": "A paper-inspired Android checklist app with photo attachments, scheduled reminders, and location alerts.",
       "status": "",
       "metadata": [
-        "Android"
+        "Android",
+        "Released November 13, 2026"
       ],
       "links": [
+        {
+          "label": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.fexed.checklist"
+        },
         {
           "label": "View on GitHub",
           "url": "https://github.com/fexed/Tickfolio"
