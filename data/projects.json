@@ -647,7 +647,10 @@
       "title": "RPG Character Sheet",
       "category": "app",
       "years": [
-        2019
+        2019,
+        2020,
+        2021,
+        2022
       ],
       "description": "An Android app for keeping track of the informations about a RPG character.Designed for D&D 5e, but useful for many other rule sets.",
       "status": "",
@@ -661,7 +664,7 @@
         }
       ],
       "startYear": 2019,
-      "endYear": 2019
+      "endYear": 2022
     },
     {
       "title": "LangInterpreter IT",
@@ -836,7 +839,7 @@
     },
     {
       "title": "15 Puzzle",
-      "category": "game",
+      "category": "software",
       "years": [
         2015
       ],
