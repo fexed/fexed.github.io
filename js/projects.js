@@ -4,7 +4,16 @@
   const status = document.getElementById("timeline-status");
   if (!timeline || !ruler || !status) return;
 
-  const years = Array.from({ length: 13 }, (_, index) => 2014 + index);
+  const years = Array.from({ length: 14 }, (_, index) => 2013 + index);
+  const projectCategories = {
+    app: "App",
+    software: "Software",
+    game: "Game",
+    ai: "AI or machine learning",
+    photography: "Photography",
+    book: "Book",
+    graduation: "Graduation thesis",
+  };
   let projectRows = [];
 
   function element(tag, className, text) {
@@ -35,10 +44,18 @@
     details.dataset.end = String(project.endYear);
 
     const summary = element("summary", "timeline-summary");
+    const identity = element("span", "timeline-project-identity");
+    const icon = document.createElement("img");
+    icon.className = "timeline-project-icon";
+    icon.src = `img/icons/${project.category}.svg`;
+    icon.alt = projectCategories[project.category];
+    icon.width = 21;
+    icon.height = 21;
     const label = element("span", "timeline-project-label");
     label.append(element("strong", "timeline-project-title", project.title));
     label.append(element("span", "timeline-project-range", yearRange(project)));
-    summary.append(label);
+    identity.append(icon, label);
+    summary.append(identity);
 
     const track = element("span", "timeline-track");
     const bar = element("span", "timeline-bar");
@@ -108,6 +125,9 @@
       if (!Array.isArray(data.projects)) throw new Error("Project data is not in the expected format.");
       const fragment = document.createDocumentFragment();
       for (const project of data.projects) {
+        if (!Object.hasOwn(projectCategories, project.category)) {
+          throw new Error(`Invalid category for ${project.title || "a project"}.`);
+        }
         if (!Number.isInteger(project.startYear) || !Number.isInteger(project.endYear) ||
             project.startYear < years[0] || project.endYear > years[years.length - 1] ||
             project.endYear < project.startYear) {

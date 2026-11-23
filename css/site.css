@@ -907,7 +907,7 @@ body.legacy-page {
 .timeline-year-track,
 .timeline-track {
   display: grid;
-  grid-template-columns: repeat(13, minmax(0, 1fr));
+  grid-template-columns: repeat(14, minmax(0, 1fr));
   align-items: center;
 }
 
@@ -971,6 +971,19 @@ body.legacy-page {
   outline-offset: -3px;
 }
 
+.timeline-project-identity {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 12px;
+}
+
+.timeline-project-icon {
+  flex: 0 0 21px;
+  width: 21px;
+  height: 21px;
+}
+
 .timeline-project-label {
   display: flex;
   min-width: 0;
@@ -998,7 +1011,7 @@ body.legacy-page {
   position: relative;
   min-height: 28px;
   background-image: linear-gradient(to right, rgba(195, 208, 238, 0.095) 1px, transparent 1px);
-  background-size: calc(100% / 13) 100%;
+  background-size: calc(100% / 14) 100%;
 }
 
 .timeline-bar {
@@ -1910,6 +1923,16 @@ body.legacy-page {
 
   .timeline-summary {
     min-height: 58px;
+  }
+
+  .timeline-project-identity {
+    gap: 7px;
+  }
+
+  .timeline-project-icon {
+    flex-basis: 18px;
+    width: 18px;
+    height: 18px;
   }
 
   .timeline-project-range {
