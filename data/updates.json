@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "date": "2026-11-23",
+      "dateLabel": "November 23, 2026",
+      "avatar": "img/photos/chat/5_propic.jpg",
+      "avatarAlt": "Federico Matteoni",
+      "messageHtml": "<p class=\"small mb-0\">Recently updated Tickfolio and have been working on a personal, highly customized news aggregator app for me and my girlfriend. Here's a screenshot!</p>\n            <br>\n            <a href=\"img/photos/chat/news-reel-2026-11-23.png\"><img src=\"img/photos/chat/news-reel-2026-11-23.png\" class=\"card-img\" alt=\"Screenshot of Fexed's News Reel showing personalized news feeds\"></a>"
+    },
+    {
       "date": "2026-11-13",
       "dateLabel": "November 13, 2026",
       "avatar": "img/photos/chat/5_propic.jpg",
