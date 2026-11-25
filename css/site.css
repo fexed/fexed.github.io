@@ -258,9 +258,6 @@ body.home {
 .github-activity-chart {
   display: block;
   width: 100%;
-  overflow-x: auto;
-  scrollbar-color: rgba(195, 208, 238, 0.35) transparent;
-  scrollbar-width: thin;
 }
 
 .github-activity-tile img {
@@ -1732,10 +1729,6 @@ body.legacy-page {
 
   .github-activity-home img {
     max-height: 66px;
-  }
-
-  .github-activity-chart img {
-    min-width: 500px;
   }
 
   .github-activity-code {
